@@ -1,16 +1,14 @@
-$color-base: #293132;
-$color-brand: #65A1E7;
+$color-brand: #007723 !default;
 
-$color-primary: #65A1E7; //
-$color-secondary: #E3E3E3; //
-$color-info: #ACCEE9;
-$color-success: #8CC739; //
-$color-warning: #FFB400; //
-$color-danger: #EA3635; //
+$color-primary: #265cad !default;
+$color-secondary: #d3d4d9 !default;
+$color-info: #5bc0eb !default;
+$color-success: #7bc950 !default;
+$color-warning: #ffd131 !default;
+$color-danger: #e4572e !default;
 
-$color-dark: #656565;
-$color-darker: #2D2D2D;
-$color-light: #F7F7F7;
+$color-dark: #343434 !default;
+$color-light: #fffefc !default;
 
 $colors: (
   primary: $color-primary,
@@ -34,6 +32,3 @@ $colors--lightened: (
   dark--lightened: lighten($color-dark, 7.5%),
   light--lightened: lighten($color-light, 7.5%)
 );
-
-
-
