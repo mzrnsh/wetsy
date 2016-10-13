@@ -1,28 +1,39 @@
 # Wetsy
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wetsy`. To experiment with that code, run `bin/console` for an interactive prompt.
+Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes **you should not have things like `width: 100%;` twice in your stylesheet**. And to do that, you should group all your selectors together and set their width to 100%. Sure, it will give you duplicated selectors instead of duplicated styles but
 
-TODO: Delete this and the text above, and describe your gem
+**We enjoy typing selectors, yay!**
+
+But we don't. So instead of typing selectors, we enjoy SASS extends with placeholders. That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. at all**. This is quite strong opinion but the nature of SASS extends does not leave us any choice other than to believe and preach this 2nd ideology. Well, let's see how it goes.
+
+To get a better idea on what Wetsy actually does, have a look at this:
+
+![Wetsy example](https://i.snag.gy/iQOkh2.jpg)
+
+See? You will never have more than one style for a selector or a group of selectors. Isn't that beautiful? Event if not, it sure is wetsy.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'wetsy'
+gem 'wetsy', git: 'https://github.com/mizurnix/wetsy.git'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install wetsy
 
 ## Usage
 
-TODO: Write usage instructions here
+After installing the gem, import wetsy.scss in your application.scss:
+
+    @import "wetsy"
+        
+Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders.
+
+Using Normalize and Autoprefixer are is strongly recommended.
 
 ## Development
 
