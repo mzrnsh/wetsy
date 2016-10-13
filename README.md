@@ -4,7 +4,7 @@ Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes 
 
 **We enjoy typing selectors, yay!**
 
-But we don't. So instead of typing selectors, we enjoy SASS extends with placeholders. That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. at all**. This is quite strong opinion but the nature of SASS extends does not leave us any choice other than to believe and preach this 2nd ideology. Well, let's see how it goes.
+But we don't. So instead of typing selectors, we enjoy SASS extends with placeholders. That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. at all**. This is quite strong opinion but the nature of SASS extends does not leave us any choice other than to believe in and preach this 2nd ideology. Well, let's see how it goes.
 
 To get a better idea on what Wetsy actually does, have a look at this:
 
@@ -33,7 +33,26 @@ After installing the gem, import wetsy.scss in your application.scss:
         
 Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders.
 
-Using Normalize and Autoprefixer are is strongly recommended.
+Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
+
+### Modifying settings
+
+Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **prior** to wetsy.scss. For example, if you want to change default colors and your application.scss looks like this:
+
+    @import "normalize-rails";
+    @import "wetsy";
+    @import "your_custom_components/*";
+    
+You should create 'settings/_colors.scss' file and change your application.scss to:
+
+    @import "normalize-rails";
+    @import "settings/colors"; // imported before wetsy.scss
+    @import "wetsy";
+    @import "your_custom_components/*";
+    
+Then you just assign desired values to color variables. For example, this will update your color-warning:
+
+    $color-warning: #FFB400;
 
 ## Development
 
@@ -43,7 +62,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wetsy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mizurnix/wetsy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
