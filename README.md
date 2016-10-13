@@ -33,7 +33,26 @@ After installing the gem, import wetsy.scss in your application.scss:
         
 Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders.
 
-Using Normalize and Autoprefixer are is strongly recommended.
+Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
+
+### Modifying settings
+
+Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **prior** to wetsy.scss. For example, if you want to change default colors and your application.scss looks like this:
+
+    @import "normalize-rails";
+    @import "wetsy";
+    @import "your_custom_components/*";
+    
+You should create 'settings/_colors.scss' file and change your application.scss to:
+
+    @import "normalize-rails";
+    @import "settings/colors"; // imported before wetsy.scss
+    @import "wetsy";
+    @import "your_custom_components/*";
+    
+Then you just assign desired values to color variables. For example, this will update your color-warning:
+
+    $color-warning: #FFB400;
 
 ## Development
 
