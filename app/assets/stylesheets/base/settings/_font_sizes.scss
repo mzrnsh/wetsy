@@ -1,0 +1,20 @@
+$font-size-root: 10px;
+
+$font-size-base: $font-size-root * 1.6;
+
+
+$font-size-h1: 2rem !default;
+$font-size-h2: 1.5rem !default;
+$font-size-h3: 1.25rem !default;
+$font-size-h4: 1.125rem !default;
+$font-size-h5: 1rem !default;
+$font-size-h6: 0.875rem !default;
+
+$heading-font-sizes: (
+  h1: $font-size-h1,
+  h2: $font-size-h2,
+  h3: $font-size-h3,
+  h4: $font-size-h4,
+  h5: $font-size-h5,
+  h6: $font-size-h6
+);
