@@ -1,0 +1,13 @@
+img {
+  @extend %max-width--100pct;
+  @extend %display--inline-block;
+}
+
+a {
+  @extend %color--primary;
+  @extend %text-decoration--none;
+}
+
+a:hover {
+  @extend %text-decoration--underline;
+}

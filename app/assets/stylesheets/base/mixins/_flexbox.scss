@@ -1,0 +1,22 @@
+@mixin flex-container(
+  $flex-direction: row,
+  $flex-wrap: wrap,
+  $justify-content: flex-start,
+  $align-content: stretch
+  ){
+  @extend %display--flex;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+  align-content: $align-content;
+}
+
+@mixin flex-item(
+  $order: nowrap,
+  $flex: 1,
+  $align-self: stretch
+  ){
+  order: $order;
+  flex: $flex;
+  align-self: $align-self;
+}

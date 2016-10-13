@@ -1,0 +1,11 @@
+%transition--background {
+  @include transition(background, $transition-duration-base)
+}
+
+%transition--opacity {
+  @include transition(opacity, $transition-duration-base)
+}
+
+%transition--box-shadow {
+  @include transition(box-shadow, $transition-duration-base)
+}

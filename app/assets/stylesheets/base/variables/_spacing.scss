@@ -1,0 +1,23 @@
+$spacing-xs: $spacing-base * 0.5;
+$spacing-sm: $spacing-base * 0.75;
+$spacing-md: $spacing-base * 1;
+$spacing-lg: $spacing-base * 2;
+$spacing-xl: $spacing-base * 3;
+
+$spacings: (
+  0: 0,
+  xs: $spacing-xs,
+  sm: $spacing-sm,
+  md: $spacing-md,
+  lg: $spacing-lg,
+  xl: $spacing-xl
+);
+
+$spacings--em: (
+  0: 0,
+  xs: $spacing-xs / 1rem + em,
+  sm: $spacing-sm / 1rem + em,
+  md: $spacing-md / 1rem + em,
+  lg: $spacing-lg / 1rem + em,
+  xl: $spacing-xl / 1rem + em
+)

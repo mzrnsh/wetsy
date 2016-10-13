@@ -1,0 +1,35 @@
+%cards,
+.cards {
+  @extend %margin--xs-negative;
+}
+
+%card,
+.card {
+  @extend %margin--xs;
+  @extend %display--inline-block;
+  @extend %border--1px_solid_secondary;
+  min-width: calc(100%/3 - #{$spacing-md});
+  max-width: calc(100% - #{$spacing-md});
+  width: calc((#{$small-screen} - 100vw) * #{$small-screen / 1px});
+}
+
+%card__image,
+.card__image {
+  @extend %width--100pct;
+  @extend %display--block;
+  @extend %height--card-image-height;
+}
+
+%card__body,
+.card__body {
+  @extend %padding--md;
+  @extend %display--inline-block;
+}
+
+%simple-card,
+.simple-card {
+  @extend %display--block;
+  @extend %padding--md;
+  @extend %width--100pct;
+  @extend %border--1px_solid_secondary;
+}

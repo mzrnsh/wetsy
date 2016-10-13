@@ -1,0 +1,47 @@
+%button--base {
+  @extend %display--inline-block;
+  @extend %border--none;
+  @extend %border-radius--button-base;
+  @extend %cursor--pointer;
+  @extend %text-decoration--none;
+  @extend %transition--background;
+  &:hover {
+    @extend %text-decoration--none;
+  }
+}
+
+%button {
+  @extend %button--base;
+  @extend %padding-y--xs;
+  @extend %padding-x--sm;
+}
+
+%button--large {
+  @extend %button--base;
+  @extend %padding-y--sm;
+  @extend %padding-x--md;
+}
+
+%primary-button {
+  @include button(primary, light)
+}
+
+%secondary-button {
+  @include button(secondary, dark)
+}
+
+%info-button {
+  @include button(info, light)
+}
+
+%success-button {
+  @include button(success, light)
+}
+
+%warning-button {
+  @include button(warning, light)
+}
+
+%danger-button {
+  @include button(danger, light)
+}

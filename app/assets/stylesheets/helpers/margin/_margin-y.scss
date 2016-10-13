@@ -1,0 +1,6 @@
+@each $size in 0, xs, sm, md, lg, xl {
+  %margin-y--#{$size} {
+    @extend %margin-top--#{$size};
+    @extend %margin-bottom--#{$size};
+  }
+}

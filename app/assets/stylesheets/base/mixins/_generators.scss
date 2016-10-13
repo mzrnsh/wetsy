@@ -1,0 +1,33 @@
+@mixin property-generator--element($property-name, $collection) {
+  @each $key, $value in $collection {
+
+    #{$key} {
+      #{$property-name}: #{$value};
+    }
+
+  }
+}
+
+@mixin property-generator--placeholder($property-name, $collection, $selector-suffix: null) {
+  @each $key, $value in $collection {
+
+    %#{$property-name}--#{$key}#{$selector-suffix} {
+      #{$property-name}: #{$value};
+    }
+
+  }
+}
+
+@mixin property-generator--class($property-name, $collection, $selector-suffix: null) {
+  // This generates placeholders as well, so when using this generator, no need to use
+  // placeholder generator for same property any more.
+
+  @each $key, $value in $collection {
+
+    %#{$property-name}--#{$key}#{$selector-suffix},
+    .#{$property-name}--#{$key}#{$selector-suffix} {
+      #{$property-name}: #{$value};
+    }
+
+  }
+}

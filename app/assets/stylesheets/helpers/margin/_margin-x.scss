@@ -1,0 +1,11 @@
+@each $size in 0, xs, sm, md, lg, xl {
+  %margin-x--#{$size} {
+    @extend %margin-right--#{$size};
+    @extend %margin-left--#{$size};
+  }
+}
+
+%margin-x--auto {
+  @extend %margin-right--auto;
+  @extend %margin-left--auto;
+}

@@ -1,0 +1,8 @@
+%unstyled-list {
+  @extend %list-style-type--none;
+  @extend %padding-left--0;
+}
+
+%full-width {
+  @extend %width--100pct;
+}
