@@ -2,9 +2,15 @@
 
 Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes **you should not have things like `width: 100%;` twice in your stylesheet**. And to do that, you should group all your selectors together and set their width to 100%. Sure, it will give you duplicated selectors instead of duplicated styles but
 
-**We enjoy typing selectors, yay!.**
+**We enjoy typing selectors, yay!**
 
-But we don't. So instead of typing selectors, we enjoy SASS extends with placeholders. That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. at all**. This is quite strong opinion but the nature of SASS extends does not leave us any choice other than to believe and preach this 2nd ideology. Well, let's see how it goes. 
+But we don't. So instead of typing selectors, we enjoy SASS extends with placeholders. That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. at all**. This is quite strong opinion but the nature of SASS extends does not leave us any choice other than to believe and preach this 2nd ideology. Well, let's see how it goes.
+
+To get a better idea on what Wetsy actually does, have a look at this:
+
+![Wetsy example](https://i.snag.gy/iQOkh2.jpg)
+
+See? You will never have more than one style for a selector or a group of selectors. Isn't that beautiful? Event if not, it sure is wetsy.
 
 ## Installation
 
@@ -25,7 +31,9 @@ After installing the gem, import wetsy.scss in your application.scss:
 
     @import "wetsy"
         
-Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders. 
+Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders.
+
+Using Normalize and Autoprefixer are is strongly recommended.
 
 ## Development
 
