@@ -57,16 +57,18 @@ Wetsy comes with some default settings like colors, fonts etc. You can override 
     @import "wetsy";
     @import "your_custom_components/*";
     
-You should create 'settings/_colors.scss' file and change your application.scss to:
+You should create `settings/_colors.scss` file and change your application.scss to:
 
     @import "normalize-rails";
     @import "settings/colors"; // imported before wetsy.scss
     @import "wetsy";
     @import "your_custom_components/*";
     
-Then you just assign desired values to color variables. For example, this will update your color-warning:
+Then you assign desired values to wetsy color variables in your `settings/_colors.scss` file:
 
     $color-warning: #FFB400;
+    
+This will override default warning color.    
 
 ## Development
 
