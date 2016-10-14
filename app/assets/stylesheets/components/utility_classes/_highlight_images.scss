@@ -1,10 +1,8 @@
-%highlight-bg-image--darken,
-.highlight-bg-image--darken {
+%highlight-bg-image--darken {
   @extend %box-shadow--inset__0__0__0__1000px__dark-transparent;
 }
 
-%highlight-bg-image--lighten,
-.highlight-bg-image--lighten {
+%highlight-bg-image--lighten {
   @extend %box-shadow--inset__0__0__0__1000px__light-transparent;
 }
 
