@@ -42,7 +42,7 @@ Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet
 And extend that placeholder from your selector:
 
     .my-weird-selector-that-needs-weird-font-size {
-        @extend %font-size--94_3pt
+        @extend %font-size--94_3pt;
     }
 
 TODO - We don't have a convention on how to structure custom wetsy-placeholders yet. Just add it somewhere in your stylesheets directory for now.        
