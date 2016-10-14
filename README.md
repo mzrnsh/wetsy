@@ -31,9 +31,9 @@ After installing the gem, import wetsy.scss in your application.scss:
 
     @import "wetsy"
         
-Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write any styles in your stylesheet - you should create your classes and extend them with existing placeholders.
+Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write any styles in your stylesheet - you should create your classes and extend them with existing wetsy-placeholders.
 
-Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create a wetsy-like placeholder
+Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create a your own wetsy-placeholder:
     
     %font-size--94_3pt {
         font-size: 94.3pt;
@@ -45,7 +45,7 @@ And extend that placeholder from your selector:
         @extend %font-size--94_3pt
     }
 
-TODO - We don't have a convention on how to structure your own wetsy placeholders yet. Just add it somewhere in your stylesheets directory for now.        
+TODO - We don't have a convention on how to structure custom wetsy-placeholders yet. Just add it somewhere in your stylesheets directory for now.        
 
 Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
 
