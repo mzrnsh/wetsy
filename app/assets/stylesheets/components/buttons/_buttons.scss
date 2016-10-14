@@ -1,7 +1,7 @@
 %button--base {
   @extend %display--inline-block;
   @extend %border--none;
-  @extend %border-radius--button-base;
+  @extend %border-radius--{$border-radius-button};
   @extend %cursor--pointer;
   @extend %text-decoration--none;
   @extend %transition--background;
@@ -16,7 +16,7 @@
   @extend %padding-x--sm;
 }
 
-%button--large {
+%large-button {
   @extend %button--base;
   @extend %padding-y--sm;
   @extend %padding-x--md;
