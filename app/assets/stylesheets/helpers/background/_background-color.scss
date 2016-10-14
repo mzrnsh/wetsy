@@ -1,4 +1,4 @@
-@include property-generator--class('background-color', $colors);
+@include property-generator--placeholder('background-color', $colors);
 
 @include property-generator--placeholder('background-color', $colors--lightened);
 
