@@ -31,11 +31,25 @@ After installing the gem, import wetsy.scss in your application.scss:
 
     @import "wetsy"
         
-Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders.
+Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write any styles in your stylesheet - you should create your classes and extend them with existing placeholders.
+
+Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create a wetsy-like placeholder
+    
+    %font-size--94_3pt {
+        font-size: 94.3pt;
+    }
+
+And extend that placeholder from your selector:
+
+    .my-weird-selector-that-needs-weird-font-size {
+        @extend %font-size--94_3pt
+    }
+
+TODO - We don't have a convention on how to structure your own wetsy placeholders yet. Just add it somewhere in your stylesheets directory for now.        
 
 Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
 
-### Modifying settings
+### Modifying default settings
 
 Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **prior** to wetsy.scss. For example, if you want to change default colors and your application.scss looks like this:
 
