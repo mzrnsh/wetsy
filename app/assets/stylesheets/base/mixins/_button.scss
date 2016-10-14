@@ -7,8 +7,8 @@
   }
 }
 
-@mixin button--large($background-color, $color) {
-  @extend %button--large;
+@mixin large-button($background-color, $color) {
+  @extend %large-button;
   @extend %background-color--#{$background-color};
   @extend %color--#{$color};
   &:hover {
