@@ -8,14 +8,14 @@
   @extend %box-shadow--inset__0__0__0__1000px__light-transparent;
 }
 
-.lighten-background-image-on-hover {
+%lighten-background-image-on-hover {
   @extend %transition--box-shadow;
   &:hover {
     @extend %box-shadow--inset__0__0__0__1000px__light-transparent;
   }
 }
 
-.lighten-image-on-hover {
+%lighten-image-on-hover {
   @extend %transition--opacity;
   &:hover {
     @extend %opacity--0pt75;
