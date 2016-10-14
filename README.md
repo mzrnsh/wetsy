@@ -2,7 +2,7 @@
 
 Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes **you should not have things like `width: 100%;` twice in your stylesheet**. And to do that, you should group all your selectors together and set their width to 100%.
 
-Sure, this will give you duplicated selectors instead of duplicated styles so you may be thinking that **We enjoy typing selectors, yeah?**. But we don't. Instead of typing selectors, we enjoy using SASS extends and placeholders to generate those selectors for us.
+Sure, this will give you duplicated selectors instead of duplicated styles so you may be thinking that **We enjoy typing selectors, yeah?** But we don't. Instead of typing selectors, we enjoy using SASS extends and placeholders to generate those selectors for us.
 
 That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. ever**. This is quite strong opinion but the nature of SASS extends does not leave us with any other choice than to believe in and preach this 2nd ideology. Well, let's see how it goes.
 
