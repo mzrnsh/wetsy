@@ -1,10 +1,10 @@
 # Wetsy
 
-Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes **you should not have things like `width: 100%;` twice in your stylesheet**. And to do that, you should group all your selectors together and set their width to 100%. Sure, it will give you duplicated selectors instead of duplicated styles but
+Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes **you should not have things like `width: 100%;` twice in your stylesheet**. And to do that, you should group all your selectors together and set their width to 100%.
 
-**We enjoy typing selectors, yay!**
+Sure, this will give you duplicated selectors instead of duplicated styles so you may be thinking that **we enjoy typing selectors, yeah?** But we don't. Instead of typing selectors, we enjoy using SASS extends and placeholders to generate those selectors for us.
 
-But we don't. So instead of typing selectors, we enjoy SASS extends with placeholders. That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. at all**. This is quite strong opinion but the nature of SASS extends does not leave us any choice other than to believe in and preach this 2nd ideology. Well, let's see how it goes.
+That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. ever**. This is quite strong opinion but the nature of SASS extends does not leave us with any other choice than to believe in and preach this 2nd ideology. Well, let's see how it goes.
 
 To get a better idea on what Wetsy actually does, have a look at this:
 
@@ -31,11 +31,25 @@ After installing the gem, import wetsy.scss in your application.scss:
 
     @import "wetsy"
         
-Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write ant styles in your stylesheet - you should create your classes and extend them with existing placeholders.
+Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write any styles in your stylesheet - you should create your classes and extend them with existing wetsy-placeholders.
+
+Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create a your own wetsy-placeholder:
+    
+    %font-size--94_3pt {
+        font-size: 94.3pt;
+    }
+
+And extend that placeholder from your selector:
+
+    .my-weird-selector-that-needs-weird-font-size {
+        @extend %font-size--94_3pt;
+    }
+
+TODO - We don't have a convention on how to structure custom wetsy-placeholders yet. Just add it somewhere in your stylesheets directory for now.        
 
 Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
 
-### Modifying settings
+### Modifying default settings
 
 Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **prior** to wetsy.scss. For example, if you want to change default colors and your application.scss looks like this:
 
@@ -43,16 +57,18 @@ Wetsy comes with some default settings like colors, fonts etc. You can override 
     @import "wetsy";
     @import "your_custom_components/*";
     
-You should create 'settings/_colors.scss' file and change your application.scss to:
+You should create `settings/_colors.scss` file and change your application.scss to:
 
     @import "normalize-rails";
     @import "settings/colors"; // imported before wetsy.scss
     @import "wetsy";
     @import "your_custom_components/*";
     
-Then you just assign desired values to color variables. For example, this will update your color-warning:
+Then you assign desired values to wetsy color variables in your `settings/_colors.scss` file:
 
     $color-warning: #FFB400;
+    
+This will override default warning color.    
 
 ## Development
 
