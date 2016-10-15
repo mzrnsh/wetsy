@@ -4,3 +4,8 @@
     @extend %margin-bottom--#{$size};
   }
 }
+
+%margin-y--negative-xs {
+  margin-bottom: -$spacing-xs;
+  margin-top: -$spacing-xs;
+}

@@ -1,3 +1,8 @@
+%height--card-image-height {
+  height: $card-image-height;
+}
+
+
 %cards {
   @extend %margin--xs-negative;
 }
