@@ -1,4 +1,9 @@
-$color-brand: #007723 !default;
+$color-lighten-percentage: 7.5%;
+
+$color-brand-1: #007723 !default; //TODO add some sane colors here
+$color-brand-2: #007723 !default; //TODO
+$color-brand-3: #007723 !default; //TODO
+$color-brand-4: #007723 !default; //TODO
 
 $color-primary: #265cad !default;
 $color-secondary: #d3d4d9 !default;
@@ -11,6 +16,10 @@ $color-dark: #343434 !default;
 $color-light: #fffefc !default;
 
 $colors: (
+  brand-1: $color-brand-1;
+  brand-2: $color-brand-2;
+  brand-3: $color-brand-3;
+  brand-4: $color-brand-4; 
   primary: $color-primary,
   secondary: $color-secondary,
   info: $color-info,
@@ -22,12 +31,16 @@ $colors: (
 );
 
 $colors--lightened: (
-  primary--lightened: lighten($color-primary, 7.5%),
-  secondary--lightened: lighten($color-secondary, 7.5%),
-  info--lightened: lighten($color-info, 7.5%),
-  success--lightened: lighten($color-success, 7.5%),
-  warning--lightened: lighten($color-warning, 7.5%),
-  danger--lightened: lighten($color-danger, 7.5%),
-  dark--lightened: lighten($color-dark, 7.5%),
-  light--lightened: lighten($color-light, 7.5%)
+  brand-1--lightened: lighten($color-brand-1, $color-lighten-percentage);
+  brand-2--lightened: lighten($color-brand-2, $color-lighten-percentage);
+  brand-3--lightened: lighten($color-brand-3, $color-lighten-percentage);
+  brand-4--lightened: lighten($color-brand-4, $color-lighten-percentage); 
+  primary--lightened: lighten($color-primary, $color-lighten-percentage),
+  secondary--lightened: lighten($color-secondary, $color-lighten-percentage),
+  info--lightened: lighten($color-info, $color-lighten-percentage),
+  success--lightened: lighten($color-success, $color-lighten-percentage),
+  warning--lightened: lighten($color-warning, $color-lighten-percentage),
+  danger--lightened: lighten($color-danger, $color-lighten-percentage),
+  dark--lightened: lighten($color-dark, $color-lighten-percentage),
+  light--lightened: lighten($color-light, $color-lighten-percentage)
 );

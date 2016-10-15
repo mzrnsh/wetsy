@@ -6,3 +6,11 @@
 %full-width {
   @extend %width--100pct;
 }
+
+%hide-unless-screen-reader {
+  @extend %position--absolute;
+  @extend %height--1px;
+  @extend %width--1px;
+  @extend %overflow--hidden;
+  @extend %clip--rect_1px_1px_1px_1px;
+}
