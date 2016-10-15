@@ -16,10 +16,10 @@ $color-dark: #343434 !default;
 $color-light: #fffefc !default;
 
 $colors: (
-  brand-1: $color-brand-1;
-  brand-2: $color-brand-2;
-  brand-3: $color-brand-3;
-  brand-4: $color-brand-4; 
+  brand-1: $color-brand-1,
+  brand-2: $color-brand-2,
+  brand-3: $color-brand-3,
+  brand-4: $color-brand-4, 
   primary: $color-primary,
   secondary: $color-secondary,
   info: $color-info,
@@ -31,10 +31,10 @@ $colors: (
 );
 
 $colors--lightened: (
-  brand-1--lightened: lighten($color-brand-1, $color-lighten-percentage);
-  brand-2--lightened: lighten($color-brand-2, $color-lighten-percentage);
-  brand-3--lightened: lighten($color-brand-3, $color-lighten-percentage);
-  brand-4--lightened: lighten($color-brand-4, $color-lighten-percentage); 
+  brand-1--lightened: lighten($color-brand-1, $color-lighten-percentage),
+  brand-2--lightened: lighten($color-brand-2, $color-lighten-percentage),
+  brand-3--lightened: lighten($color-brand-3, $color-lighten-percentage),
+  brand-4--lightened: lighten($color-brand-4, $color-lighten-percentage), 
   primary--lightened: lighten($color-primary, $color-lighten-percentage),
   secondary--lightened: lighten($color-secondary, $color-lighten-percentage),
   info--lightened: lighten($color-info, $color-lighten-percentage),
