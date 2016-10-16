@@ -32,22 +32,22 @@ $colors: (
 );
 
 $colors--darkened: (
-  brand-1--darkened: lighten($color-brand-1, $color-darken-percentage),
-  brand-2--darkened: lighten($color-brand-2, $color-darken-percentage),
-  brand-3--darkened: lighten($color-brand-3, $color-darken-percentage),
-  brand-4--darkened: lighten($color-brand-4, $color-darken-percentage),
-  primary--darkened: lighten($color-primary, $color-darken-percentage),
-  secondary--darkened: lighten($color-secondary, $color-darken-percentage),
-  info--darkened: lighten($color-info, $color-darken-percentage),
-  success--darkened: lighten($color-success, $color-darken-percentage),
-  warning--darkened: lighten($color-warning, $color-darken-percentage),
-  danger--darkened: lighten($color-danger, $color-darken-percentage),
-  dark--darkened: lighten($color-dark, $color-darken-percentage),
-  light--darkened: lighten($color-light, $color-darken-percentage)
+  brand-1--darkened: darken($color-brand-1, $color-darken-percentage),
+  brand-2--darkened: darken($color-brand-2, $color-darken-percentage),
+  brand-3--darkened: darken($color-brand-3, $color-darken-percentage),
+  brand-4--darkened: darken($color-brand-4, $color-darken-percentage),
+  primary--darkened: darken($color-primary, $color-darken-percentage),
+  secondary--darkened: darken($color-secondary, $color-darken-percentage),
+  info--darkened: darken($color-info, $color-darken-percentage),
+  success--darkened: darken($color-success, $color-darken-percentage),
+  warning--darkened: darken($color-warning, $color-darken-percentage),
+  danger--darkened: darken($color-danger, $color-darken-percentage),
+  dark--darkened: darken($color-dark, $color-darken-percentage),
+  light--darkened: darken($color-light, $color-darken-percentage)
 );
 
 $colors--lightened: (
-  brand-1--lightened: lighten($color-brand-1, $color-lighten-percentage),
+  brand-1--lightened: ($color-brand-1, $color-lighten-percentage),
   brand-2--lightened: lighten($color-brand-2, $color-lighten-percentage),
   brand-3--lightened: lighten($color-brand-3, $color-lighten-percentage),
   brand-4--lightened: lighten($color-brand-4, $color-lighten-percentage), 
