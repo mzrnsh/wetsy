@@ -1,8 +1,11 @@
+%transition-property--color {
+ transition-property: color;
+}
+
 %transition-property--opacity {
   transition-property: opacity;
 }
 
-
-%transition-property--opacity__color {
-  transition-property: opacity, color;
+%transition-property--color__opacity {
+  transition-property: color, opacity;
 }
