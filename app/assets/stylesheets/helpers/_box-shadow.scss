@@ -3,6 +3,6 @@
 }
 
 %box-shadow--inset__0__0__0__1000px__light-transparent {
-  // TODO on normal images I have opacity which goes to white, not $light
+  // TODO on normal images I have opacity which goes to white, not light
   box-shadow: inset 0 0 0 1000px rgba($color-light, .25);
 }
