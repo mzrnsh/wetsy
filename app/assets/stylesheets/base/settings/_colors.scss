@@ -1,4 +1,5 @@
 $color-lighten-percentage: 7.5%;
+$color-darken-percentage: 7.5%;
 
 $color-brand-1: #007723 !default; //TODO add some sane colors here
 $color-brand-2: #007723 !default; //TODO
@@ -59,6 +60,3 @@ $colors--darkened: (
   dark--darkened: lighten($color-dark, $color-darken-percentage),
   light--darkened: lighten($color-light, $color-darken-percentage)
 );
-
-
-// TODO - add --darkened
