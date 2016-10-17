@@ -37,10 +37,6 @@ $colors: (
 );
 
 $colors--darkened: (
-  @each $key, $value in $colors {
-    #{#key}--darkened: darken(#{$value}, $color-darken-percentage)
-  }
-
   brand-1--darkened: darken($color-brand-1, $color-darken-percentage),
   brand-2--darkened: darken($color-brand-2, $color-darken-percentage),
   brand-3--darkened: darken($color-brand-3, $color-darken-percentage),
