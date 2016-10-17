@@ -40,13 +40,11 @@ $colors: (
 $colors--darkened: ();
 
 @each $key, $value in $colors {
-  $appendable: ('#{$key}--darkened': darken($value, $color-darken-percentage));
-  append($colors--darkened, $appendable, ',');
+  append($colors--darkened, '#{$key}--darkened'): darken($value, $color-darken-percentage);
 };
 
 $colors--lightened: ();
 
 @each $key, $value in $colors {
-  $appendable: ('#{$key}--lightened': lighten($value, $color-lighten-percentage));
-  append($colors--darkened, $appendable, ',');
+  append($colors--lightened, '#{$key}--lightened'): lighten($value, $color-lighten-percentage);
 };
