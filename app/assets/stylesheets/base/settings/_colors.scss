@@ -16,35 +16,37 @@ $color-danger: #e4572e !default;
 $color-dark: #343434 !default;
 $color-light: #f9f9f9 !default;
 
-$color-facebook: #3b5998;
+$color-facebook: #3b5998 !default;
 
 $colors: (
   brand-1: $color-brand-1,
   brand-2: $color-brand-2,
   brand-3: $color-brand-3,
-  brand-4: $color-brand-4, 
-  
+  brand-4: $color-brand-4,
+
   primary: $color-primary,
   secondary: $color-secondary,
   info: $color-info,
   success: $color-success,
   warning: $color-warning,
   danger: $color-danger,
-  
+
   dark: $color-dark,
   light: $color-light,
 
-  facebook: $color-facebook,
+  facebook: $color-facebook
 );
 
-$colors--darkened: (
-  @each $key, $value in $colors {
-    #{$key}--darkened: darken(#{$value}, $color-darken-percentage),
-  }
-);
+$colors--darkened: ();
 
-$colors--lightened: (
-  @each $key, $value in $colors {
-    #{$key}--lightened: lighten(#{$value}, $color-lighten-percentage),
-  }
-);
+@each $key, $value in $colors {
+  $appendable = #{$key}--darkened: darken($value, $color-darken-percentage);
+  append($colors--darkened, $appendable[, $separator]);
+};
+
+$colors--lightened: ();
+
+@each $key, $value in $colors {
+  $appendable = #{$key}--lightened: lighten($value, $color-lighten-percentage);
+  append($colors--darkened, $appendable[, $separator]);
+};
