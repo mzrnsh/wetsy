@@ -39,12 +39,12 @@ $colors: (
 
 $colors--darkened: (
   @each $key, $value in $colors {
-    #{#key}--darkened: darken(#{$value}, $color-darken-percentage),
+    #{$key}--darkened: darken(#{$value}, $color-darken-percentage),
   }
 );
 
 $colors--lightened: (
   @each $key, $value in $colors {
-    #{#key}--lightened: lighten(#{$value}, $color-lighten-percentage),
+    #{$key}--lightened: lighten(#{$value}, $color-lighten-percentage),
   }
 );
