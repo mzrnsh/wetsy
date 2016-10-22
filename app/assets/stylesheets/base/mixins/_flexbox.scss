@@ -3,7 +3,7 @@
   $flex-wrap: nowrap,
   $justify-content: flex-start,
   $align-content: stretch,
-  $align-items: flex-start;
+  $align-items: flex-start
   ){
   @extend %display--flex;
   flex-direction: $flex-direction;
