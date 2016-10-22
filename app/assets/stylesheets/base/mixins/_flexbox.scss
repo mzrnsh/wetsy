@@ -1,14 +1,16 @@
 @mixin flex-container(
   $flex-direction: row,
-  $flex-wrap: wrap,
+  $flex-wrap: nowrap,
   $justify-content: flex-start,
-  $align-content: stretch
+  $align-content: stretch,
+  $align-items: flex-start;
   ){
   @extend %display--flex;
   flex-direction: $flex-direction;
   flex-wrap: $flex-wrap;
   justify-content: $justify-content;
   align-content: $align-content;
+  align-items: $align-items;
 }
 
 @mixin flex-item(

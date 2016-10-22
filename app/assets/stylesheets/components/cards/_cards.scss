@@ -10,7 +10,7 @@
 %card {
   @extend %margin--xs;
   @extend %display--inline-block;
-  @extend %border--1px_solid_secondary;
+  @extend %border--1px__solid__color-secondary;
   min-width: calc(100%/3 - #{$spacing-md});
   max-width: calc(100% - #{$spacing-md});
   width: calc((#{$small-screen} - 100vw) * #{$small-screen / 1px});
@@ -31,5 +31,5 @@
   @extend %display--block;
   @extend %padding--md;
   @extend %width--100pct;
-  @extend %border--1px_solid_secondary;
+  @extend %border--1px__solid__color-secondary;
 }
