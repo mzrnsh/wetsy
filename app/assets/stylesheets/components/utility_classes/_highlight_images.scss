@@ -1,21 +1,21 @@
 %highlight-bg-image--darken {
-  @extend %box-shadow--inset__0__0__0__1000px__dark-transparent;
+  @extend %box-shadow__inset__0__0__0__1000px__dark-transparent;
 }
 
 %highlight-bg-image--lighten {
-  @extend %box-shadow--inset__0__0__0__1000px__light-transparent;
+  @extend %box-shadow__inset__0__0__0__1000px__light-transparent;
 }
 
 %lighten-background-image-on-hover {
-  @extend %transition--box-shadow;
+  @extend %transition__box-shadow;
   &:hover {
-    @extend %box-shadow--inset__0__0__0__1000px__light-transparent;
+    @extend %box-shadow__inset__0__0__0__1000px__light-transparent;
   }
 }
 
 %lighten-image-on-hover {
-  @extend %transition--opacity;
+  @extend %transition__opacity;
   &:hover {
-    @extend %opacity--0pt75;
+    @extend %opacity__0pt75;
   }
 }

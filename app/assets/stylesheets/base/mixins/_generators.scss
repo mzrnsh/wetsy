@@ -11,7 +11,7 @@
 @mixin property-generator--placeholder($property-name, $collection, $selector-suffix: null) {
   @each $key, $value in $collection {
 
-    %#{$property-name}--#{$key}#{$selector-suffix} {
+    %#{$property-name}__#{$key}#{$selector-suffix} {
       #{$property-name}: #{$value};
     }
 
@@ -24,8 +24,8 @@
 
   @each $key, $value in $collection {
 
-    %#{$property-name}--#{$key}#{$selector-suffix},
-    .#{$property-name}--#{$key}#{$selector-suffix} {
+    %#{$property-name}__#{$key}#{$selector-suffix},
+    .#{$property-name}__#{$key}#{$selector-suffix} {
       #{$property-name}: #{$value};
     }
 

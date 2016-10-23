@@ -1,17 +1,17 @@
-@mixin button($background-color, $color) {
+@mixin button($background-color, $color, $hover: lightened) {
   @extend %button;
-  @extend %background-color--#{$background-color};
-  @extend %color--#{$color};
+  @extend %background-color__#{$background-color};
+  @extend %color__#{$color};
   &:hover {
-    @extend %background-color--#{$background-color}--lightened;
+    @extend %background-color__#{$background-color}--#{$hover};
   }
 }
 
-@mixin large-button($background-color, $color) {
+@mixin large-button($background-color, $color, $hover: lightened) {
   @extend %large-button;
-  @extend %background-color--#{$background-color};
-  @extend %color--#{$color};
+  @extend %background-color__#{$background-color};
+  @extend %color__#{$color};
   &:hover {
-    @extend %background-color--#{$background-color}--lightened;
+    @extend %background-color__#{$background-color}--#{$hover};
   }
 }

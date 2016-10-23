@@ -1,16 +1,16 @@
 %unstyled-list {
-  @extend %list-style-type--none;
-  @extend %padding-left--0;
+  @extend %list-style-type__none;
+  @extend %padding-left__0;
 }
 
 %full-width {
-  @extend %width--100pct;
+  @extend %width__100pct;
 }
 
 %hide-unless-screen-reader {
-  @extend %position--absolute;
-  @extend %height--1px;
-  @extend %width--1px;
-  @extend %overflow--hidden;
-  @extend %clip--rect_1px_1px_1px_1px;
+  @extend %position__absolute;
+  @extend %height__1px;
+  @extend %width__1px;
+  @extend %overflow__hidden;
+  @extend %clip__rect_1px_1px_1px_1px;
 }

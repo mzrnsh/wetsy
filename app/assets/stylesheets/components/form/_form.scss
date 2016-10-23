@@ -1,3 +1,13 @@
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="text"],
 textarea {
-  @extend %resize--vertical;
+  @extend %border__1px__solid__color-secondary;
 }
+
+textarea {
+  @extend %resize__vertical;
+}
+

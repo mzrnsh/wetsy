@@ -1,13 +1,13 @@
 %button {
   @extend %button--base;
-  @extend %padding-y--xs;
-  @extend %padding-x--sm;
+  @extend %padding-y__xs;
+  @extend %padding-x__sm;
 }
 
 %large-button {
   @extend %button--base;
-  @extend %padding-y--sm;
-  @extend %padding-x--md;
+  @extend %padding-y__sm;
+  @extend %padding-x__md;
 }
 
 %primary-button {

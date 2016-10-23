@@ -1,13 +1,13 @@
 img {
-  @extend %max-width--100pct;
-  @extend %display--inline-block;
+  @extend %max-width__100pct;
+  @extend %display__inline-block;
 }
 
 a {
-  @extend %color--primary;
-  @extend %text-decoration--none;
+  @extend %color__primary;
+  @extend %text-decoration__none;
 }
 
 a:hover {
-  @extend %text-decoration--underline;
+  @extend %text-decoration__underline;
 }

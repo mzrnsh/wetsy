@@ -1,5 +1,1 @@
 @include property-generator--placeholder('padding', $spacings);
-
-.padding--md {
-  @extend %padding--md;
-}

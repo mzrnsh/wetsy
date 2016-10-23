@@ -1,11 +1,12 @@
-@mixin flex-container(
+//Todo use extends here
+@mixin flexbox(
   $flex-direction: row,
   $flex-wrap: nowrap,
   $justify-content: flex-start,
   $align-content: stretch,
   $align-items: flex-start
   ){
-  @extend %display--flex;
+  @extend %display__flex;
   flex-direction: $flex-direction;
   flex-wrap: $flex-wrap;
   justify-content: $justify-content;

@@ -1,9 +1,9 @@
 @include property-generator--placeholder('margin', $spacings);
 
-%margin--md-negative {
-  margin: -#{$spacing-md};
+%margin__-xs {
+  margin: -#{$spacing-xs};
 }
 
-%margin--xs-negative {
-  margin: -#{$spacing-xs};
+%margin__-md {
+  margin: -#{$spacing-md};
 }

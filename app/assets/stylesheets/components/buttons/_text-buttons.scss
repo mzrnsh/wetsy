@@ -1,11 +1,11 @@
 %text-button {
-  @extend %padding-y--xs;
-  @extend %padding-x--sm;
-  @extend %display--inline-block;
+  @extend %padding-y__xs;
+  @extend %padding-x__sm;
+  @extend %display__inline-block;
 }
 
 %text-button--large {
-  @extend %padding-y--sm;
-  @extend %padding-x--md;
-  @extend %display--inline-block;
+  @extend %padding-y__sm;
+  @extend %padding-x__md;
+  @extend %display__inline-block;
 }

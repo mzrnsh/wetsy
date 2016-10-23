@@ -1,13 +1,13 @@
 // TODO these placeholders do not smell like wetsy-placeholders
 
-%transition--background {
+%transition__background {
   @include transition(background, $transition-duration-base)
 }
 
-%transition--opacity {
+%transition__opacity {
   @include transition(opacity, $transition-duration-base)
 }
 
-%transition--box-shadow {
+%transition__box-shadow {
   @include transition(box-shadow, $transition-duration-base)
 }

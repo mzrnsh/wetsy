@@ -1,7 +1,7 @@
-%transition-duration--base {
+%transition-duration__base {
   transition-duration: $transition-duration-base;
 }
 
-%transition-duration--0pt2s {
+%transition-duration__0pt2s {
   transition-duration: .2s;
 }

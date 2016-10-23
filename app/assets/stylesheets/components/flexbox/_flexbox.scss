@@ -1,9 +1,9 @@
-%flex-container {
-  @include flex-container();
+%flexbox {
+  @include flexbox();
 }
 
-%flex-container--space-between {
-  @include flex-container($justify-content: space-between);
+%flexbox--space-between {
+  @include flexbox($justify-content: space-between);
 }
 
 %flex-item {

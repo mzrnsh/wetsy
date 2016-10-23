@@ -1,9 +1,9 @@
 @include property-generator--placeholder('margin-left', $spacings);
 
-%margin-left--auto {
+%margin-left__auto {
   margin-left: auto;
 }
 
-%margin-left--100pct {
+%margin-left__100pct {
   margin-left: 100%;
 }

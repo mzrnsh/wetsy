@@ -1,11 +1,11 @@
 @each $size in 0, xs, sm, md, lg, xl {
-  %margin-y--#{$size} {
-    @extend %margin-top--#{$size};
-    @extend %margin-bottom--#{$size};
+  %margin-y__#{$size} {
+    @extend %margin-top__#{$size};
+    @extend %margin-bottom__#{$size};
   }
 }
 
-%margin-y--negative-xs {
+%margin-y__-xs {
   margin-bottom: -$spacing-xs;
   margin-top: -$spacing-xs;
 }

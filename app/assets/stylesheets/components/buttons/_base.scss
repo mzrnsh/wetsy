@@ -1,12 +1,12 @@
 %button--base {
-  @extend %display--inline-block;
-  @extend %border--none;
-  @extend %border-radius--#{$border-radius-button};
-  @extend %cursor--pointer;
-  @extend %text-decoration--none;
-  @extend %transition--background;
-  @extend %text-align--center;
+  @extend %display__inline-block;
+  @extend %border__none;
+  @extend %border-radius__#{$border-radius-button};
+  @extend %cursor__pointer;
+  @extend %text-decoration__none;
+  @extend %transition__background;
+  @extend %text-align__center;
   &:hover {
-    @extend %text-decoration--none;
+    @extend %text-decoration__none;
   }
 }
