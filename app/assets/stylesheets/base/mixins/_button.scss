@@ -1,4 +1,4 @@
-@mixin button($background-color, $color, $hover: lightened) {
+@mixin button($background-color, $color, $hover: $color+'ened') {
   @extend %button;
   @extend %background-color__#{$background-color};
   @extend %color__#{$color};
@@ -7,7 +7,7 @@
   }
 }
 
-@mixin large-button($background-color, $color, $hover: lightened) {
+@mixin large-button($background-color, $color, $hover: $color+'ened') {
   @extend %large-button;
   @extend %background-color__#{$background-color};
   @extend %color__#{$color};

@@ -11,25 +11,25 @@
 }
 
 %primary-button {
-  @include button(primary, light)
+  @include button(primary, light);
 }
 
 %secondary-button {
-  @include button(secondary, dark)
+  @include button(secondary, dark);
 }
 
 %info-button {
-  @include button(info, light)
+  @include button(info, light);
 }
 
 %success-button {
-  @include button(success, light)
+  @include button(success, light);
 }
 
 %warning-button {
-  @include button(warning, light)
+  @include button(warning, light);
 }
 
 %danger-button {
-  @include button(danger, light)
+  @include button(danger, light);
 }
