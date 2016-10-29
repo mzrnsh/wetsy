@@ -1,0 +1,4 @@
+%boxed-layout {
+  @extend %max-width__box-content-width; //TODO rename variable to boxed-layout-width
+  @extend %margin-x__auto;
+}

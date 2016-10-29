@@ -2,6 +2,10 @@
 @include property-generator--placeholder('background-color', $colors--lightened);
 @include property-generator--placeholder('background-color', $colors--darkened);
 
+%background-color__inherit {
+  background-color: inherit;
+}
+
 %background-color__transparent {
   background-color: transparent;
 }
