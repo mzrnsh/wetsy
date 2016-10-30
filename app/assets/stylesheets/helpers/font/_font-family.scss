@@ -1,8 +1,8 @@
-%font-family__body-font-families {
-  font-family: $body-font-families;
+%font-family__body-font-family {
+  font-family: $body-font-family;
 }
 
 // TODO find a way to avoid duplicating font-family property if it's the same for body and headings
-%font-family__heading-font-families {
-  font-family: $heading-font-families;
+%font-family__heading-font-family {
+  font-family: $heading-font-family;
 }
