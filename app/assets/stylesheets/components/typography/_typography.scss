@@ -1,7 +1,7 @@
 html {
   @extend %font-size__base;
   @extend %color__dark;
-  @extend %font-family__Roboto__sans-serif;
+  @extend %font-family__body-font-family;
   @extend %font-weight__400;
 }
 
@@ -9,7 +9,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  @extend %font-family__Raleway__sans-serif;
+  @extend %font-family__heading-font-family;
   @extend %font-weight__500;
   @extend %margin-top__sm_em;
   @extend %margin-bottom__xs_em;

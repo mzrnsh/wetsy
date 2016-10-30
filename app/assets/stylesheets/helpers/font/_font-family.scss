@@ -1,7 +1,8 @@
-%font-family__Roboto__sans-serif {
-  font-family: 'Roboto', sans-serif;
+%font-family__body-font-families {
+  font-family: $body-font-families;
 }
 
-%font-family__Raleway__sans-serif {
-  font-family: 'Raleway', sans-serif;
+// TODO find a way to avoid duplicating font-family property if it's the same for body and headings
+%font-family__heading-font-families {
+  font-family: $heading-font-families;
 }
