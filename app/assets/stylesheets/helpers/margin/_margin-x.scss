@@ -9,3 +9,8 @@
   @extend %margin-right__auto;
   @extend %margin-left__auto;
 }
+
+%margin-x__1px {
+  @extend %margin-left__1px;
+  @extend %margin-right__1px;
+}

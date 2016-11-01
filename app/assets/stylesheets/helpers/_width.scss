@@ -1,19 +1,32 @@
+/*
+percents
+*/
 %width__100pct {
   width: 100%;
 }
 
+/*
+rems
+*/
+%width__1pt4rem {
+  width: 1.4rem;
+}
+
+%width__10rem {
+  width: 10rem;
+}
+
+%width__15rem {
+  width: 15rem;
+}
+
+/*
+pixels
+*/
 %width__1px {
   width: 1px;
 }
 
 %width__100px {
   width: 100px;
-}
-
-%width__1pt4rem {
-  width: 1.4rem;
-}
-
-%width__15rem {
-  width: 15rem;
 }
