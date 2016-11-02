@@ -1,9 +1,13 @@
+%max-width__box-content-width {
+  max-width: $box-content-width;
+}
+
 %max-width__100pct {
   max-width: 100%;
 }
 
-%max-width__box-content-width {
-  max-width: $box-content-width;
+%max-width__20rem {
+  max-width: 20rem;
 }
 
 %max-width__400px {
