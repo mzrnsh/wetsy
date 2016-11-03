@@ -10,6 +10,10 @@
 
 /* rems */
 
+%max-width__10rem {
+  max-width: 10rem;
+}
+
 %max-width__20rem {
   max-width: 20rem;
 }
@@ -19,6 +23,14 @@
 }
 
 /* pixels */
+
+%max-width__240px {
+  max-width: 240px;
+}
+
+%max-width__320px {
+  max-width: 320px;
+}
 
 %max-width__400px {
   max-width: 400px;
