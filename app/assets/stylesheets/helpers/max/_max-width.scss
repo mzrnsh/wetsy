@@ -2,14 +2,28 @@
   max-width: $box-content-width;
 }
 
+/* percents */
+
 %max-width__100pct {
   max-width: 100%;
 }
+
+/* rems */
 
 %max-width__20rem {
   max-width: 20rem;
 }
 
+%max-width__30rem {
+  max-width: 30rem;
+}
+
+/* pixels */
+
 %max-width__400px {
   max-width: 400px;
+}
+
+%max-width__480px {
+  max-width: 480px;
 }
