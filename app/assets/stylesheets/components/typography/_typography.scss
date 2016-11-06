@@ -11,8 +11,8 @@ body {
 h1,h2,h3,h4,h5,h6 {
   @extend %font-family__heading-font-family;
   @extend %font-weight__500;
-  @extend %margin-top__sm_em;
-  @extend %margin-bottom__xs_em;
+  @extend %margin-top__0;
+  @extend %margin-bottom__md;
 }
 
 @include property-generator--element('font-size', $heading-font-sizes);
