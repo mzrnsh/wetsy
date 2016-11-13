@@ -3,6 +3,7 @@ input[type="email"],
 input[type="number"],
 input[type="password"],
 input[type="text"],
+input[type="url"],
 textarea {
   @extend %border__1px__solid__color-secondary;
 }
@@ -10,4 +11,3 @@ textarea {
 textarea {
   @extend %resize__vertical;
 }
-
