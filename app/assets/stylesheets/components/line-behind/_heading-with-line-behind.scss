@@ -1,3 +1,6 @@
+// TODO make colors dynamic
+// TODO maybe dump span and find another solution without adding html elements?
+
 %heading-with-line-behind {
   @extend %position__relative;
   @extend %text-align__center;
@@ -9,7 +12,7 @@
   @extend %height__1px;
   @extend %width__100pct;
   @extend %display__block;
-  @extend %border-top__1px__solid__dark;
+  @extend %border-top__1px__solid__secondary;
   @extend %position__absolute;
   @extend %bottom__0pt5em;
   @extend %z-index__0;
@@ -18,6 +21,6 @@
 %heading-with-line-behind span {
   @extend %padding-x__xs;
   @extend %position__relative;
-  @extend %background-color__inherit;
+  @extend %background-color__white;
   @extend %z-index__1;
 }
