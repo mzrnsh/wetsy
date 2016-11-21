@@ -6,12 +6,28 @@
   display: flex;
 }
 
+%display__inherit {
+  display: inherit;
+}
+
+%display__initial {
+  display: initial;
+}
+
 %display__inline {
   display: inline;
 }
 
 %display__inline-block {
   display: inline-block;
+}
+
+%display__inline-flex {
+  display: inline-flex;
+}
+
+%display__inline-table {
+  display: inline-table;
 }
 
 %display__none {
