@@ -1,4 +1,4 @@
-@each $size in 0, xs, sm, md, lg, xl {
+@each $size in 0, 2xs, xs, sm, md, lg, xl, 2xl {
   %margin-y__#{$size} {
     @extend %margin-top__#{$size};
     @extend %margin-bottom__#{$size};

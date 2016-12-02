@@ -1,4 +1,4 @@
-@each $size in 0, xs, sm, md, lg, xl {
+@each $size in 0, 2xs, xs, sm, md, lg, xl, 2xl {
   %padding-x__#{$size} {
     @extend %padding-right__#{$size};
     @extend %padding-left__#{$size};
