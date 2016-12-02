@@ -1,25 +1,31 @@
-$spacing-base: 1rem !default;
+$spacing-base: 1 !default;
 
+$spacing-2xs: $spacing-base * 0.25 !default;
 $spacing-xs: $spacing-base * 0.5 !default;
 $spacing-sm: $spacing-base * 0.75 !default;
 $spacing-md: $spacing-base * 1 !default;
 $spacing-lg: $spacing-base * 2 !default;
 $spacing-xl: $spacing-base * 3 !default;
+$spacing-2xl: $spacing-base * 3 !default;
 
 $spacings: (
-  0: 0,
-  xs: $spacing-xs,
-  sm: $spacing-sm,
-  md: $spacing-md,
-  lg: $spacing-lg,
-  xl: $spacing-xl
+    0: 0,
+  2xs: $spacing-2xs + rem,
+   xs: $spacing-xs + rem,
+   sm: $spacing-sm + rem,
+   md: $spacing-md + rem,
+   lg: $spacing-lg + rem,
+   xl: $spacing-xl + rem,
+  2xl: $spacing-2xl + rem
 );
 
 $spacings--em: (
-  0: 0,
-  xs: $spacing-xs / 1rem + em,
-  sm: $spacing-sm / 1rem + em,
-  md: $spacing-md / 1rem + em,
-  lg: $spacing-lg / 1rem + em,
-  xl: $spacing-xl / 1rem + em
+    0: 0,
+  2xs: $spacing-2xs + em,
+   xs: $spacing-xs + em,
+   sm: $spacing-sm + em,
+   md: $spacing-md + em,
+   lg: $spacing-lg + em,
+   xl: $spacing-xl + em,
+  2xl: $spacing-2xl + em
 )
