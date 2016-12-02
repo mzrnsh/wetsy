@@ -11,3 +11,7 @@ a {
 a:hover {
   @extend %text-decoration__underline;
 }
+
+body {
+  @extend %line-height__1pt5;
+}
