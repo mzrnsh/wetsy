@@ -15,19 +15,22 @@ $text-button__hover-text-decoration: 'underline' !default;
 
 @mixin button(
   $background-color,
+  $border: $button__border,
+  $border-radius: $button__border-radius,
   $color,
   $display: 'inline-block',
   $padding-x: $button__padding-x,
   $padding-y: $button__padding-y,
   $text-decoration: 'none',
+  $transition: $button__transition,
   $width: 'auto',
   // hover styles
   $hover-background-color: $background-color+'--'+$color+'ened',
   $hover-text-decoration: 'none'
 ){
   @extend %background-color__#{$background-color};
-  @extend %border__#{$button__border};
-  @extend %border-radius__#{$button__border-radius};
+  @extend %border__#{$border};
+  @extend %border-radius__#{$border-radius};
   @extend %color__#{$color};
   @extend %cursor__pointer;
   @extend %display__#{$display};
@@ -35,7 +38,7 @@ $text-button__hover-text-decoration: 'underline' !default;
   @extend %padding-x__#{$padding-y};
   @extend %text-align__center;
   @extend %text-decoration__#{$text-decoration};
-  @extend %transition__#{$button__transition};
+  @extend %transition__#{$transition};
   @extend %width__#{$width};
   &:hover {
     @extend %background-color__#{$hover-background-color};
