@@ -1,0 +1,35 @@
+%primary-block-button {
+  @include button($background-color: 'primary', $color: 'light', $display: 'block', $width: '100pct');
+}
+
+%secondary-block-button {
+  @include button($background-color: 'secondary', $color: 'dark', $display: 'block', $width: '100pct');
+}
+
+%info-block-button {
+  @include button($background-color: 'info', $color: 'light', $display: 'block', $width: '100pct');
+}
+
+%success-block-button {
+  @include button($background-color: 'success', $color: 'light', $display: 'block', $width: '100pct');
+}
+
+%warning-block-button {
+  @include button($background-color: 'warning', $color: 'light', $display: 'block', $width: '100pct');
+}
+
+%danger-block-button {
+  @include button($background-color: 'danger', $color: 'light', $display: 'block', $width: '100pct');
+}
+
+%text-block-button {
+  @include button(
+    $background-color: 'transparent',
+    $border: 'none',
+    $color: 'dark',
+    $display: 'block',
+    $text-decoration: $text-button__text-decoration,
+    $width: '100pct',
+    $hover-text-decoration: $text-button__hover-text-decoration
+  );
+}

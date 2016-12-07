@@ -1,0 +1,33 @@
+%primary-button {
+  @include button($background-color: 'primary', $color: 'light');
+}
+
+%secondary-button {
+  @include button($background-color: 'secondary', $color: 'dark');
+}
+
+%info-button {
+  @include button($background-color: 'info', $color: 'light');
+}
+
+%success-button {
+  @include button($background-color: 'success', $color: 'light');
+}
+
+%warning-button {
+  @include button($background-color: 'warning', $color: 'light');
+}
+
+%danger-button {
+  @include button($background-color: 'danger', $color: 'light');
+}
+
+%text-button {
+  @include button(
+    $background-color: 'transparent',
+    $border: 'none',
+    $color: 'dark',
+    $text-decoration: $text-button__text-decoration,
+    $hover-text-decoration: $text-button__hover-text-decoration
+  );
+}
