@@ -14,10 +14,12 @@ $text-button__text-decoration: 'none' !default;
 $text-button__hover-text-decoration: 'underline' !default;
 
 @mixin button(
+  // required arguments
   $background-color,
+  $color,
+  // optional arguments
   $border: $button__border,
   $border-radius: $button__border-radius,
-  $color,
   $display: 'inline-block',
   $padding-x: $button__padding-x,
   $padding-y: $button__padding-y,
