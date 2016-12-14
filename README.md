@@ -4,7 +4,7 @@ Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes 
 
 Sure, this will give you duplicated selectors instead of duplicated styles so you may be thinking that **we enjoy typing selectors, yeah?** But we don't. Instead of typing selectors, we enjoy using SASS extends and placeholders to generate those selectors for us.
 
-That gave us another, rather unexpected ideology which is **You should not override styles with more specific selectors.. ever**. This is quite strong opinion but the nature of SASS extends does not leave us with any other choice than to believe in and preach this 2nd ideology. Well, let's see how it goes.
+Relying on extends comes with a price - you no longer control which style comes first in your compiled stylesheet. In some cases this is not bad - it pushes you to structure your styles in a way that only selector specificity and not location defines which styles to appy to a certain element. On the other hand, as of now we have not found a wetsy-way to deal with fallbacks (for example, you may use calc() to set width for an element, but want to support ancient browsers so you define width in pixels as well).
 
 To get a better idea on what Wetsy actually does, have a look at this:
 
