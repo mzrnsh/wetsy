@@ -1,5 +1,5 @@
 @for $i from 0 through 12 {
-  %order__#{i} {
+  %order__#{$i} {
     order: $i;
   }
 }
