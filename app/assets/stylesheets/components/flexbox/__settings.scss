@@ -1,0 +1,25 @@
+@mixin flexbox(
+  $display: flex,
+  $flex-direction: row,
+  $flex-wrap: nowrap,
+  $justify-content: flex-start,
+  $align-content: stretch,
+  $align-items: flex-start
+  ){
+  @extend %display__#{$display};
+  @extend %flex-direction__#{$flex-direction};
+  @extend %flex-wrap__#{$flex-wrap};
+  @extend %justify-content__#{$justify-content};
+  @extend %align-content__#{$align-content};
+  @extend %align-items__#{$align-items};
+}
+
+@mixin flex-item(
+  $order: nowrap,
+  $flex: 1,
+  $align-self: stretch
+  ){
+  @extend %order__#{$order};
+  @extend %flex__#{$flex};
+  @extend %align-self__#{$align-self};
+}
