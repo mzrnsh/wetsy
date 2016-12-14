@@ -15,7 +15,7 @@
 }
 
 @mixin flex-item(
-  $order: nowrap,
+  $order: 0,
   $flex: 1,
   $align-self: stretch
   ){
