@@ -43,12 +43,12 @@ $text-button__hover-text-decoration: 'underline' !default;
   @extend %transition__#{$transition};
   @extend %width__#{$width};
 
-  &:hover {
+  &:hover:not([disabled="disabled"]) {
     @extend %background-color__#{$hover-background-color};
     @extend %text-decoration__#{$hover-text-decoration};
   }
 
-  &[type="disabled"] {
+  &[disabled="disabled"] {
     @extend %background-color__secondary;
     @extend %cursor__not-allowed;
   }
