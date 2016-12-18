@@ -1,9 +1,9 @@
 // TODO should the color be 'dark' or 'color-dark'?
 // Maybe change color naming entirely? 'c-dark', 'dark-color' or smt else..
-%border-top__1px__solid__dark {
+%border-top__1px__solid__color-dark {
   border-top: 1px solid $color-dark;
 }
 
-%border-top__1px__solid__secondary {
+%border-top__1px__solid__color-secondary {
   border-top: 1px solid $color-secondary;
 }
