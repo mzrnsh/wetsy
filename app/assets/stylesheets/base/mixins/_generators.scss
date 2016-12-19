@@ -11,22 +11,22 @@
 @mixin property-generator--placeholder($property-name, $collection, $selector-suffix: null, $negative: false) {
   @each $key, $value in $collection {
 
-    %#{ $property-name }__#{ $key }#{ $selector-suffix } {
+    %#{ $property-name }__#{ if($negative, '-','') }#{ $key }#{ $selector-suffix } {
       #{ $property-name }: #{ if($negative, '-','') }#{ $value };
     }
 
   }
 }
 
-@mixin property-generator--class($property-name, $collection, $selector-suffix: null) {
+@mixin property-generator--class($property-name, $collection, $selector-suffix: null, $negative: false) {
   // This generates placeholders as well, so when using this generator, no need to use
   // placeholder generator for same property any more.
 
   @each $key, $value in $collection {
 
-    %#{$property-name}__#{$key}#{$selector-suffix},
-    .#{$property-name}__#{$key}#{$selector-suffix} {
-      #{$property-name}: #{$value};
+    %#{ $property-name }__#{ if($negative, '-','') }#{ $key }#{ $selector-suffix },
+    .#{ $property-name }__#{ if($negative, '-','') }#{ $key }#{ $selector-suffix } {
+      #{ $property-name }: #{ if($negative, '-','') }#{ $value };
     }
 
   }
