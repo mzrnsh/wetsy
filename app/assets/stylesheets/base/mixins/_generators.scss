@@ -8,11 +8,11 @@
   }
 }
 
-@mixin property-generator--placeholder($property-name, $collection, $selector-suffix: null, $value-prefix: null) {
+@mixin property-generator--placeholder($property-name, $collection, $selector-suffix: null, $negative: false) {
   @each $key, $value in $collection {
 
-    %#{$property-name}__#{$key}#{$selector-suffix} {
-      #{$property-name}: #{$value-prefix}#{$value};
+    %#{ $property-name }__#{ $key }#{ $selector-suffix } {
+      #{ $property-name }: #{ if($negative, '-','') }#{ $value };
     }
 
   }

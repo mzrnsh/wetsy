@@ -1,2 +1,2 @@
 @include property-generator--placeholder('right', $spacings);
-@include property-generator--placeholder('right', $spacings, $value-prefix: '-');
+@include property-generator--placeholder('right', $spacings, $negative: true);

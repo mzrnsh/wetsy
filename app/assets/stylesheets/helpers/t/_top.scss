@@ -1,2 +1,2 @@
 @include property-generator--placeholder('top', $spacings);
-@include property-generator--placeholder('top', $spacings, $value-prefix: '-');
+@include property-generator--placeholder('top', $spacings, $negative: true);
