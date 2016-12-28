@@ -55,7 +55,9 @@
 %text-button--large {
   @include button(
     $background-color: 'transparent',
-    $border: 'none',
+    $border-color: '',
+    $border-style: 'none',
+    $border-width: '0',
     $color: 'primary',
     $padding-x: $button--large__padding-x,
     $padding-y: $button--large__padding-y,

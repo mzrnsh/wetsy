@@ -25,7 +25,9 @@
 %text-button {
   @include button(
     $background-color: 'transparent',
-    $border: 'none',
+    $border-color: '',
+    $border-style: 'none',
+    $border-width: '0',
     $color: 'primary',
     $text-decoration: $text-button__text-decoration,
     $hover-background-color: 'transparent',
