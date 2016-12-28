@@ -1,6 +1,8 @@
 // base settings
-$button__border: 'none' !default;
+$button__border-color: '--darkened' !default;
 $button__border-radius: 0 !default;
+$button__border-style: 'solid' !default;
+$button__border-width: 1px !default;
 $button__transition: 'background' !default;
 $button__padding-x: 'sm' !default;
 $button__padding-y: '2xs' !default;
@@ -18,8 +20,10 @@ $text-button__hover-text-decoration: 'underline' !default;
   $background-color,
   $color,
   // optional arguments
-  $border: $button__border,
+  $border-color: $button__border-color,
   $border-radius: $button__border-radius,
+  $border-style: $button__border-style,
+  $border-width: $button__border-width,
   $display: 'inline-block',
   $padding-x: $button__padding-x,
   $padding-y: $button__padding-y,
@@ -31,8 +35,10 @@ $text-button__hover-text-decoration: 'underline' !default;
   $hover-text-decoration: 'none'
 ){
   @extend %background-color__#{$background-color};
-  @extend %border__#{$border};
+  @extend %border-color__#{$background-color}#{$border-color};
   @extend %border-radius__#{$border-radius};
+  @extend %border-style__#{$border-style};
+  @extend %border-width__#{$border-width};
   @extend %color__#{$color};
   @extend %cursor__pointer;
   @extend %display__#{$display};
