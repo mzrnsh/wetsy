@@ -1,3 +1,7 @@
 @include property-generator--placeholder('border-color', $colors);
 @include property-generator--placeholder('border-color', $colors--lightened);
 @include property-generator--placeholder('border-color', $colors--darkened);
+
+%border-color__transparent {
+  border-color: transparent;
+}
