@@ -4,8 +4,10 @@ input[type="number"],
 input[type="password"],
 input[type="text"],
 input[type="url"],
+select,
 textarea {
   @extend %border__1px__solid__color-secondary;
+  @extend %padding__2xs;
 }
 
 textarea {
