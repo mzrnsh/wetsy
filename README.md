@@ -134,7 +134,7 @@ Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
 
 ### Modifying default settings
 
-Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **prior** to wetsy.scss. For example, if you want to change default colors and your application.scss looks like this:
+Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **before** `wetsy.scss`. For example, if you want to change default colors and your `application.scss` looks like this:
 
 ```scss
   @import "normalize-rails";
@@ -142,7 +142,7 @@ Wetsy comes with some default settings like colors, fonts etc. You can override 
   @import "your_custom_components/*";
 ```    
 
-You should create `settings/_colors.scss` file and change your application.scss to:
+You should create `settings/_colors.scss` file and change your `application.scss` to this:
 
 ```scss
   @import "normalize-rails";
