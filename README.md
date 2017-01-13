@@ -100,31 +100,35 @@ gem 'wetsy', git: 'https://github.com/mizurnix/wetsy.git'
 ```
 
 And then execute:
-
-    $ bundle
-
+```shell
+bundle install
+```
 
 ## Usage
 
-After installing the gem, import wetsy.scss in your application.scss:
+After installing the gem, import `wetsy.scss` into `application.scss`:
 
-    @import "wetsy"
-        
-Then import your own styles. If you wanna work clean, the wetsy-way, you will ideally never write any styles in your stylesheet - you should create your classes and extend them with existing wetsy-placeholders.
+```scss
+@import "wetsy"
+```        
+Then import your own styles. If you wanna work clean, the Wetsy-way, ideally you should never write selector-specific styles s in your stylesheets - instead extend your selectors with existing wetsy-placeholders.
 
-Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create a your own wetsy-placeholder:
-    
-    %font-size--94_3pt {
-        font-size: 94.3pt;
-    }
+Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create your own placeholder:
 
+```scss    
+%font-size--94_3pt {
+  font-size: 94.3pt;
+}
+```
 And extend that placeholder from your selector:
 
-    .my-weird-selector-that-needs-weird-font-size {
-        @extend %font-size--94_3pt;
-    }
+```scss
+.my-weird-selector-that-needs-weird-font-size {
+  @extend %font-size--94_3pt;
+}
+```
 
-TODO - We don't have a convention on how to structure custom wetsy-placeholders yet. Just add it somewhere in your stylesheets directory for now.        
+TODO - We don't have a convention on how to structure custom placeholders yet. Just add it somewhere in your stylesheets directory for now. At least that's what I do.
 
 Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
 
@@ -132,24 +136,30 @@ Using Normalize and Autoprefixer together with Wetsy is strongly recommended.
 
 Wetsy comes with some default settings like colors, fonts etc. You can override those defaults by adding your own settings and importing them **prior** to wetsy.scss. For example, if you want to change default colors and your application.scss looks like this:
 
-    @import "normalize-rails";
-    @import "wetsy";
-    @import "your_custom_components/*";
-    
+```scss
+  @import "normalize-rails";
+  @import "wetsy";
+  @import "your_custom_components/*";
+```    
+
 You should create `settings/_colors.scss` file and change your application.scss to:
 
-    @import "normalize-rails";
-    @import "settings/colors"; // imported before wetsy.scss
-    @import "wetsy";
-    @import "your_custom_components/*";
-    
+```scss
+  @import "normalize-rails";
+  @import "settings/colors"; // imported before wetsy.scss
+  @import "wetsy";
+  @import "your_custom_components/*";
+```
+
 Then you assign desired values to wetsy color variables in your `settings/_colors.scss` file:
 
-    $color-warning: #FFB400;
-    
+```scss
+  $color-warning: #FFB400;
+```
+
 This will override default warning color.    
 
-## Development
+## Development - TODO
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
@@ -159,8 +169,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mizurnix/wetsy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
