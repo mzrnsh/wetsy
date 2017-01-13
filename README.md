@@ -124,7 +124,7 @@ And extend that placeholder from your selector:
 
 ```scss
 .my-weird-selector-that-needs-weird-font-size {
-  @extend %font-size--94_3pt;
+  @extend %font-size__94_3pt;
 }
 ```
 
