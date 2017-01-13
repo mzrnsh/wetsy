@@ -10,7 +10,15 @@ To get a better idea on what Wetsy actually does, have a look at an
 
 ## Example
 
-Let's assume you have `<div class="button-success">Push me</div>` element that needs to have `width: 100%;`  `background-color: #34a853;` and `border-radius: 2px`.
+Let's assume you have following HTML:
+
+```html
+<div class="button-success">
+  Push me
+</div>
+``` 
+
+and your div needs to have `width: 100%;`  `background-color: #34a853;` and `border-radius: 2px`.
 
 Your css would probably look like this:
 
@@ -31,23 +39,57 @@ If you are using SASS or some other preprocessor, you may have something like th
   border-radius: $button-border-radius;
 }
 ```
-which would compile to previous snippet.
+which compiles to previous CSS snippet.
 
 ----
 
-With Wetsy your SCSS file will look similar to this:
+With Wetsy your compiled CSS will look similar to this:
 
-```scss
-.button-success, .message-success, .sign-up-button, .etc {
+```css
+body,
+main,
+.container,
+.header,
+.button-success,
+.some-other-full-width-element,
+.etc {
   width: 100%;
-  background-color: $success;
-  border-radius: $button-border-radius;
+}
+
+.button-success,
+.message-success,
+.some-other-successful-thing,
+.etc {
+  background-color: #34a853;
+}
+
+.button-default,
+.button-success,
+.button-warning,
+.button-disabled,
+.some-other-round-cornered-box,
+.etc {
+  border-radius: 2px;
 }
 ```
+And now the interesting part.. That CSS is compiled from this SCSS:
+
+```scss
+/* Some other selectors here */
+
+.button-success {
+  @extend %width__100pct;
+  @extend %background-color__success;
+  @extend %boder-radius__2px;
+}
+
+/* Even more selectors here */
+```
+Let's have another look on what Wetsy gives you (this time a screenshot from a live website):
 
 ![Wetsy example](https://i.snag.gy/iQOkh2.jpg)
 
-See? You will never have more than one style for a selector or a group of selectors. Isn't that beautiful? Event if not, it sure is wetsy.
+See? You will never have more than one style for a selector or a group of selectors. Isn't that beautiful? Event if not, it sure is Wetsy.
 
 ## Installation
 
