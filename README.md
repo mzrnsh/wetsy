@@ -18,7 +18,7 @@ Let's assume you have following HTML:
 </div>
 ``` 
 
-and your div needs to have `width: 100%;`, `padding: 1rem;`, `background-color: #34a853;`, and `border-radius: 4px`.
+and your div needs to have `width: 100%;` `padding: 1rem;` `background-color: #34a853;` and `border-radius: 4px`.
 
 Normally, your css would probably look like this:
 
