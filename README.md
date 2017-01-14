@@ -18,15 +18,16 @@ Let's assume you have following HTML:
 </div>
 ``` 
 
-and your div needs to have `width: 100%;`  `background-color: #34a853;` and `border-radius: 2px`.
+and your div needs to have `width: 100%;`, `padding: 1rem;`, `background-color: #34a853;`, and `border-radius: 4px`.
 
-Your css would probably look like this:
+Normally, your css would probably look like this:
 
 ```css
 .button-success {
   width: 100%;
+  padding: 1rem;
   background-color: #34a853;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 ```
 
@@ -35,6 +36,7 @@ If you are using SASS or some other preprocessor, you may have something like th
 ```scss
 .button-success {
   width: 100%;
+  padding: $padding-md; // let's assume you have a SASS variable $padding-md: 1rem;
   background-color: $success;
   border-radius: $button-border-radius;
 }
@@ -56,6 +58,17 @@ main,
   width: 100%;
 }
 
+body,
+main,
+.button-default,
+.button-success,
+.button-warning,
+.button-disabled,
+.some-other-element-that-needs-padding,
+.etc {
+  padding: 1rem;
+}
+
 .button-success,
 .message-success,
 .some-other-successful-thing,
@@ -69,7 +82,7 @@ main,
 .button-disabled,
 .some-other-round-cornered-box,
 .etc {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 ```
 And now the interesting part.. That CSS is compiled from this SCSS:
@@ -79,12 +92,14 @@ And now the interesting part.. That CSS is compiled from this SCSS:
 
 .button-success {
   @extend %width__100pct;
+  @extend %padding__md;
   @extend %background-color__success;
-  @extend %boder-radius__2px;
+  @extend %boder-radius__2xs; // With Wetsy default settings, __2xs would compile to 0.25rem, which is 4px for 16px body font-size. Phew!.. more on this later
 }
 
 /* Even more selectors here */
 ```
+
 Let's have another look on what Wetsy gives you (this time a screenshot from a live website):
 
 ![Wetsy example](https://i.snag.gy/iQOkh2.jpg)
