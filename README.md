@@ -82,7 +82,7 @@ main,
 .button-disabled,
 .some-other-round-cornered-box,
 .etc {
-  border-radius: 0.25rem; // Which equals 4px if body font-size is 16px
+  border-radius: 0.25rem; /* Which equals 4px if body font-size is 16px */
 }
 ```
 And now the interesting part.. That CSS is compiled from this SCSS:
@@ -94,7 +94,7 @@ And now the interesting part.. That CSS is compiled from this SCSS:
   @extend %width__100pct;
   @extend %padding__md;
   @extend %background-color__success;
-  @extend %boder-radius__2xs; // With Wetsy default settings, '__2xs' would compile to 0.25rem. More on this later
+  @extend %boder-radius__2xs; /* With Wetsy default settings, '__2xs' would compile to 0.25rem. More on this later */
 }
 
 /* Even more selectors here */
