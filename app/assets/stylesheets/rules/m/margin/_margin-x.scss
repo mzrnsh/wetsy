@@ -4,13 +4,13 @@
 }
 
 %margin-x__1px {
-  @extend %margin-left__1px;
   @extend %margin-right__1px;
+  @extend %margin-left__1px;
 }
 
-@each $size in 0, 2xs, xs, sm, md, lg, xl, 2xl {
-  %margin-x__#{$size} {
-    @extend %margin-right__#{$size};
-    @extend %margin-left__#{$size};
+@each $key, $value in $spacings {
+  %margin-x__#{$key} {
+    @extend %margin-right__#{$key};
+    @extend %margin-left__#{$key};
   }
 }

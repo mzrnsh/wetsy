@@ -4,9 +4,9 @@
   margin-top: -$spacing-xs;
 }
 
-@each $size in 0, 2xs, xs, sm, md, lg, xl, 2xl {
-  %margin-y__#{$size} {
-    @extend %margin-top__#{$size};
-    @extend %margin-bottom__#{$size};
+@each $key, $value in $spacings {
+  %margin-y__#{$key} {
+    @extend %margin-bottom__#{$key};
+    @extend %margin-top__#{$key};
   }
 }
