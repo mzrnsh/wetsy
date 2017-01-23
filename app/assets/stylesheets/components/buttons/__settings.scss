@@ -3,13 +3,18 @@ $button__border-color: '--darkened' !default;
 $button__border-radius: 0 !default;
 $button__border-style: 'solid' !default;
 $button__border-width: 1px !default;
-$button__transition: 'background' !default;
+$button__font-size: '1rem' !default;
 $button__padding-x: 'sm' !default;
 $button__padding-y: '2xs' !default;
+$button__transition: 'background' !default;
 
 // large buttons
 $button--large__padding-x: 'md' !default;
 $button--large__padding-y: 'xs' !default;
+
+// small buttons
+$button--small__padding-x: 'xs' !default;
+$button--small__padding-y: '3xs' !default;
 
 // text buttons
 $text-button__text-decoration: 'none' !default;
@@ -25,6 +30,7 @@ $text-button__hover-text-decoration: 'underline' !default;
   $border-style: $button__border-style,
   $border-width: $button__border-width,
   $display: 'inline-block',
+  $font-size: $button__font-size,
   $padding-x: $button__padding-x,
   $padding-y: $button__padding-y,
   $text-decoration: 'none',
@@ -42,6 +48,7 @@ $text-button__hover-text-decoration: 'underline' !default;
   @extend %color__#{$color};
   @extend %cursor__pointer;
   @extend %display__#{$display};
+  @extend %font-size__#{$font-size};
   @extend %padding-x__#{$padding-x};
   @extend %padding-y__#{$padding-y};
   @extend %text-align__center;
