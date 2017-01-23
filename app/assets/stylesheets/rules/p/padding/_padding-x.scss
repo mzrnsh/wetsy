@@ -1,6 +1,6 @@
-@each $size in 0, 2xs, xs, sm, md, lg, xl, 2xl {
-  %padding-x__#{$size} {
-    @extend %padding-right__#{$size};
-    @extend %padding-left__#{$size};
+@each $key, $value in $spacings {
+  %padding-x__#{$key} {
+    @extend %padding-right__#{$key};
+    @extend %padding-left__#{$key};
   }
 }
