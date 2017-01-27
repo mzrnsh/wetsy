@@ -1,9 +1,8 @@
+@import "base/base";
+
+@import "rules/**/*";
 @media (max-width: 480px) {
-  @import "base/base";
-  @import "components/**/*";
   @import "rules/**/*";
 }
 
-@import "base/base";
 @import "components/**/*";
-@import "rules/**/*";
