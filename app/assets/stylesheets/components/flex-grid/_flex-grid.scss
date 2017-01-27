@@ -1,0 +1,9 @@
+%flex-grid {
+  @include flexbox();
+  @extend %margin-x__-xs;
+
+  %flex-grid__column {
+    @extend %flex__1;
+    @extend %margin__xs;
+  }
+}

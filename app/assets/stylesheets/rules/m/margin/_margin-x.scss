@@ -8,6 +8,11 @@
   @extend %margin-left__1px;
 }
 
+%margin-x__-xs {
+  margin-left: -$spacing-xs;
+  margin-right: -$spacing-xs;
+}
+
 @each $key, $value in $spacings {
   %margin-x__#{$key} {
     @extend %margin-right__#{$key};
