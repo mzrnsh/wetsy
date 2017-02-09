@@ -1,9 +1,12 @@
 %flex-grid {
-  @include flexbox();
-  @extend %margin-x__-xs;
+  @include flexbox(
+    $flex-wrap: wrap
+  );
 
-  %flex-grid__column {
-    @extend %flex__1;
-    @extend %margin-x__xs;
-  }
+  @extend %margin-x__-xs;
+}
+
+%flex-grid__column {
+  @extend %flex__1;
+  @extend %margin-x__xs;
 }
