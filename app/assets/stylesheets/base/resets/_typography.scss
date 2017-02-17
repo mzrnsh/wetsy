@@ -1,11 +1,12 @@
 html {
-  @extend %font-size__base;
+  @extend %font-size__html;
   @extend %color__dark;
   @extend %font-family__body-font-family;
   @extend %font-weight__400;
 }
 
 body {
+  @extend %font-size__body;
 }
 
 h1,h2,h3,h4,h5,h6 {
