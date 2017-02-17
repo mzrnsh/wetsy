@@ -34,7 +34,7 @@
   @include button(
     $background-color: 'success',
     $color: 'light',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y
   );
@@ -67,7 +67,7 @@
     $border-style: 'none',
     $border-width: '0',
     $color: 'primary',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y,
     $text-decoration: $text-button__text-decoration,
