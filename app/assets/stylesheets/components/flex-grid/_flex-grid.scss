@@ -9,4 +9,5 @@
 %flex-grid__column {
   @extend %flex__1;
   @extend %margin-x__xs;
+  @extend %align-items__stretch;
 }

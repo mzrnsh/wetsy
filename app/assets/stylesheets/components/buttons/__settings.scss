@@ -1,3 +1,4 @@
+
 // base settings
 $button__border-color: '--darkened' !default;
 $button__border-radius: 0 !default;
@@ -35,6 +36,7 @@ $text-button__hover-text-decoration: 'underline' !default;
   $padding-y: $button__padding-y,
   $text-decoration: 'none',
   $transition: $button__transition,
+  $white-space: 'normal',
   $width: 'auto',
   // hover styles
   $hover-background-color: $background-color+'--'+$color+'ened',
@@ -54,6 +56,7 @@ $text-button__hover-text-decoration: 'underline' !default;
   @extend %text-align__center;
   @extend %text-decoration__#{$text-decoration};
   @extend %transition__#{$transition};
+  @extend %white-space__#{$white-space};
   @extend %width__#{$width};
 
   &:hover:not([disabled="disabled"]) {

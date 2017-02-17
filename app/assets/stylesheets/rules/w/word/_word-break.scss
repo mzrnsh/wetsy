@@ -2,6 +2,10 @@
   word-break: break-all;
 }
 
+%word-break__break-word {
+  word-break: break-word;
+}
+
 %word-break__inherit {
   word-break: inherit;
 }

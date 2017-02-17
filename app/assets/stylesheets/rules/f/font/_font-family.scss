@@ -2,6 +2,10 @@
   font-family: $body-font-family;
 }
 
+%font-family__inherit {
+  font-family: inherit;
+}
+
 // TODO find a way to avoid duplicating font-family property if it's the same for body and headings
 %font-family__heading-font-family {
   font-family: $heading-font-family;

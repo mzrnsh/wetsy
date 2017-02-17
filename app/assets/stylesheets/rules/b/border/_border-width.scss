@@ -9,3 +9,11 @@
 %border-width__2px {
   border-width: 2px;
 }
+
+%border-width__1px__1px__0__1px {
+  border-width: 1px 1px 0 1px;
+}
+
+%border-width__0__0__1px__0 {
+  border-width: 0 0 1px 0;
+}

@@ -5,3 +5,12 @@
 %border-color__transparent {
   border-color: transparent;
 }
+
+
+%border-color__secondary__secondary__transparent__secondary {
+  border-color: $color-secondary $color-secondary transparent $color-secondary;
+}
+
+%border-color__transparent__transparent__secondary__transparent {
+  border-color: transparent transparent $color-secondary transparent;
+}

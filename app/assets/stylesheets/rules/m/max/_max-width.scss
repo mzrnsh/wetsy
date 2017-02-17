@@ -8,6 +8,10 @@
 
 /* percents */
 
+%max-width__50pct {
+  max-width: 50%;
+}
+
 %max-width__100pct {
   max-width: 100%;
 }
@@ -16,6 +20,10 @@
 
 %max-width__10rem {
   max-width: 10rem;
+}
+
+%max-width__15rem {
+  max-width: 15rem;
 }
 
 %max-width__20rem {
