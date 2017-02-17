@@ -4,7 +4,7 @@
   @include button(
     $background-color: 'primary',
     $color: 'light',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y
   );
@@ -14,7 +14,7 @@
   @include button(
     $background-color: 'secondary',
     $color: 'dark',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y
   );
@@ -24,7 +24,7 @@
   @include button(
     $background-color: 'info',
     $color: 'light',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y
   );
@@ -44,7 +44,7 @@
   @include button(
     $background-color: 'warning',
     $color: 'light',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y
   );
@@ -54,7 +54,7 @@
   @include button(
     $background-color: 'danger',
     $color: 'light',
-    $font-size: '0pt875rem',
+    $font-size: '1pt4rem',
     $padding-x: $button--small__padding-x,
     $padding-y: $button--small__padding-y
   );
