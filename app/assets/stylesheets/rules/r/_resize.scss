@@ -1,3 +1,19 @@
+%resize__both {
+  resize: both;
+}
+
+%resize__horizontal {
+  resize: horizontal;
+}
+
+%resize__inherit {
+  resize: inherit;
+}
+
+%resize__none {
+  resize: none;
+}
+
 %resize__vertical {
   resize: vertical;
 }
