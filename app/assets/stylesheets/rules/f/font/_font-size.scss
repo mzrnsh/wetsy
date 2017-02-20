@@ -10,6 +10,7 @@
   font-size: inherit;
 }
 
+// Rems
 %font-size__0pt75rem {
   font-size: 0.75rem;
 }
@@ -38,6 +39,28 @@
   font-size: 2rem;
 }
 
+// Percents
+%font-size__87pt5pct {
+  font-size: 87.5%;
+}
+
 %font-size__115pct {
   font-size: 115%;
+}
+
+// Pixels
+%font-size__16px {
+  font-size: 16px;
+}
+
+%font-size__24px {
+  font-size: 24px;
+}
+
+%font-size__32px {
+  font-size: 32px;
+}
+
+%font-size__48px {
+  font-size: 48px;
 }

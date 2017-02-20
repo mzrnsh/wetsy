@@ -31,4 +31,5 @@
   @extend %padding__md;
   @extend %width__100pct;
   @extend %border__1px__solid__color-secondary;
+  @extend %border-radius__#{$card__border-radius};
 }
