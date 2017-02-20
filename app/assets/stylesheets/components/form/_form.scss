@@ -5,9 +5,11 @@ input[type="password"],
 input[type="search"],
 input[type="text"],
 input[type="url"],
-textarea {
+textarea,
+select {
   @extend %padding__2xs;
   @extend %border__1px__solid__color-secondary;
+  @extend %background-color__white;
 }
 
 textarea {
