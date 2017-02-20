@@ -27,5 +27,5 @@ select {
 }
 
 textarea {
-  @extend %resize__#{$textaread__resize};
+  @extend %resize__#{$textarea__resize};
 }
