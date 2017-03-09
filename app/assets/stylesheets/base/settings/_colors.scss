@@ -1,88 +1,75 @@
+// Default percentage at which lighter and darker versions of colors will be created
 $color-lighten-percentage: 7.5% !default;
-$color-darken-percentage: 7.5% !default;
+$color-darken-percentage:  7.5% !default;
 
-$color-brand-1: #007723 !default; //TODO add some sane colors here
-$color-brand-2: #007723 !default; //TODO
-$color-brand-3: #007723 !default; //TODO
-$color-brand-4: #007723 !default; //TODO
+// Default colors. Values should be overridden by host project settings
+$color-brand-1: #ffffff !default;
+$color-brand-2: #ffffff !default;
+$color-brand-3: #ffffff !default;
+$color-brand-4: #ffffff !default;
 
-$color-primary: #265cad !default;
+$color-primary:   #265cad !default;
 $color-secondary: #d3d4d9 !default;
-$color-info: #5bc0eb !default;
-$color-success: #7bc950 !default;
-$color-warning: #ffd131 !default;
-$color-danger: #e4572e !default;
+$color-info:      #5bc0eb !default;
+$color-success:   #7bc950 !default;
+$color-warning:   #ffd131 !default;
+$color-danger:    #e4572e !default;
 
-$color-dark: #343434 !default;
+$color-dark:  #343434 !default;
 $color-light: #f9f9f9 !default;
-$color-pale: #b7b7b7 !default;
+$color-pale:  #b7b7b7 !default;
 
-$color-facebook: #3b5998 !default;
-$color-twitter: #1DA1F2 !default;
+$color-facebook:  #3b5998 !default;
+$color-twitter:   #1da1f2 !default;
 $color-pinterest: #bd081c !default;
 
-$colors: (
+$base-colors: (
   brand-1: $color-brand-1,
   brand-2: $color-brand-2,
   brand-3: $color-brand-3,
   brand-4: $color-brand-4,
 
-  primary: $color-primary,
+  primary:   $color-primary,
   secondary: $color-secondary,
-  info: $color-info,
-  success: $color-success,
-  warning: $color-warning,
-  danger: $color-danger,
+  info:      $color-info,
+  success:   $color-success,
+  warning:   $color-warning,
+  danger:    $color-danger,
 
-  dark: $color-dark,
+  dark:  $color-dark,
   light: $color-light,
-  pale: $color-pale,
+  pale:  $color-pale,
 
-  facebook: $color-facebook,
-  twitter: $color-twitter,
+  facebook:  $color-facebook,
+  twitter:   $color-twitter,
   pinterest: $color-pinterest
 );
 
-$colors--darkened: (
-  brand-1--darkened: darken($color-brand-1, $color-darken-percentage),
-  brand-2--darkened: darken($color-brand-2, $color-darken-percentage),
-  brand-3--darkened: darken($color-brand-3, $color-darken-percentage),
-  brand-4--darkened: darken($color-brand-4, $color-darken-percentage),
+// $custom-colors is an empty default, allowing host project
+// to extend list of avaiable colors by overriding this map
+// and putting some key/value pairs inside
+$custom-colors: (
+  // facebook:  #3b5998,
+  // twitter:   #1da1f2,
+  // pinterest: #bd081c
+) !default;
 
-  primary--darkened: darken($color-primary, $color-darken-percentage),
-  secondary--darkened: darken($color-secondary, $color-darken-percentage),
-  info--darkened: darken($color-info, $color-darken-percentage),
-  success--darkened: darken($color-success, $color-darken-percentage),
-  warning--darkened: darken($color-warning, $color-darken-percentage),
-  danger--darkened: darken($color-danger, $color-darken-percentage),
+$all-colors: map-merge($base-colors, $custom-colors);
 
-  dark--darkened: darken($color-dark, $color-darken-percentage),
-  light--darkened: darken($color-light, $color-darken-percentage),
-  pale--darkened: darken($color-pale, $color-darken-percentage),
+$colors: ();
+@each $key, $value in $all-colors {
+  $color: (
+    $key: $value
+  );
+  $colors: map-merge($colors, $color);
 
-  facebook--darkened: darken($color-facebook, $color-darken-percentage),
-  twitter--darkened: darken($color-twitter, $color-darken-percentage),
-  pinterest--darkened: darken($color-pinterest, $color-darken-percentage)
-);
+  $color--darkened: (
+    #{$key}--darkened: darken($value, $color-darken-percentage)
+  );
+  $colors: map-merge($colors, $color--darkened);
 
-$colors--lightened: (
-  brand-1--lightened: ($color-brand-1, $color-lighten-percentage),
-  brand-2--lightened: lighten($color-brand-2, $color-lighten-percentage),
-  brand-3--lightened: lighten($color-brand-3, $color-lighten-percentage),
-  brand-4--lightened: lighten($color-brand-4, $color-lighten-percentage),
-
-  primary--lightened: lighten($color-primary, $color-lighten-percentage),
-  secondary--lightened: lighten($color-secondary, $color-lighten-percentage),
-  info--lightened: lighten($color-info, $color-lighten-percentage),
-  success--lightened: lighten($color-success, $color-lighten-percentage),
-  warning--lightened: lighten($color-warning, $color-lighten-percentage),
-  danger--lightened: lighten($color-danger, $color-lighten-percentage),
-
-  dark--lightened: lighten($color-dark, $color-lighten-percentage),
-  light--lightened: lighten($color-light, $color-lighten-percentage),
-  pale--lightened: lighten($color-pale, $color-lighten-percentage),
-
-  facebook--lightened: lighten($color-facebook, $color-lighten-percentage),
-  twitter--lightened: lighten($color-twitter, $color-lighten-percentage),
-  pinterest--lightened: lighten($color-pinterest, $color-lighten-percentage)
-);
+  $color--lightened: (
+    #{$key}--lightened: lighten($value, $color-lighten-percentage)
+  );
+  $colors: map-merge($colors, $color--lightened);
+}
