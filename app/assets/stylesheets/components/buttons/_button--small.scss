@@ -3,75 +3,77 @@
 %primary-button--small {
   @include button(
     $background-color: 'primary',
-    $color: 'light',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y
+    $color:            'light',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y
   );
 }
 
 %secondary-button--small {
   @include button(
     $background-color: 'secondary',
-    $color: 'dark',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y
+    $color:            'dark',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y
   );
 }
 
 %info-button--small {
   @include button(
     $background-color: 'info',
-    $color: 'light',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y
+    $color:            'light',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y
   );
 }
 
 %success-button--small {
   @include button(
     $background-color: 'success',
-    $color: 'light',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y
+    $color:            'light',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y
   );
 }
 
 %warning-button--small {
   @include button(
     $background-color: 'warning',
-    $color: 'light',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y
+    $color:            'light',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y
   );
 }
 
 %danger-button--small {
   @include button(
     $background-color: 'danger',
-    $color: 'light',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y
+    $color:            'light',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y
   );
 }
 
 %text-button--small {
   @include button(
     $background-color: 'transparent',
-    $border-color: '',
-    $border-style: 'none',
-    $border-width: '0',
-    $color: 'primary',
-    $font-size: '0pt875rem',
-    $padding-x: $button--small__padding-x,
-    $padding-y: $button--small__padding-y,
-    $text-decoration: $text-button__text-decoration,
+    $border-color:     '',
+    $border-radius:    '0',
+    $border-style:     'none',
+    $border-width:     '0',
+    $color:            'primary',
+    $font-size:        '0pt875rem',
+    $padding-x:        $button--small__padding-x,
+    $padding-y:        $button--small__padding-y,
+    $text-decoration:  $text-button__text-decoration,
+
     $hover-background-color: 'transparent',
-    $hover-text-decoration: $text-button__hover-text-decoration
+    $hover-text-decoration:  $text-button__hover-text-decoration
   );
 }
