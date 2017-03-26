@@ -9,7 +9,7 @@
 %card {
   @extend %margin__xs;
   @extend %display__inline-block;
-  @extend %border__1px__solid__color-secondary;
+  @extend %border__1px__solid__secondary;
   min-width: calc(100%/3 - #{$spacing-md});
   max-width: calc(100% - #{$spacing-md});
   width: calc((#{$small-screen} - 100vw) * #{$small-screen / 1px});
@@ -30,6 +30,6 @@
   @extend %display__block;
   @extend %padding__md;
   @extend %width__100pct;
-  @extend %border__1px__solid__color-secondary;
+  @extend %border__1px__solid__secondary;
   @extend %border-radius__#{$card__border-radius};
 }

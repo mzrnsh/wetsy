@@ -1,3 +1,7 @@
-%border-bottom__1px__solid__color-secondary {
+%border-bottom__1px__solid__secondary {
   border-bottom: 1px solid $color-secondary;
+}
+
+%border-bottom__2px__solid__primary {
+  border-bottom: 2px solid $color-primary;
 }
