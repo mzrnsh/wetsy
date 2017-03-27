@@ -17,7 +17,7 @@ $button--small__padding-x: 'xs' !default;
 $button--small__padding-y: '3xs' !default;
 
 // text buttons
-$text-button__text-decoration: 'none' !default;
+$text-button__text-decoration:       'none' !default;
 $text-button__hover-text-decoration: 'underline' !default;
 
 @mixin button(
@@ -25,21 +25,21 @@ $text-button__hover-text-decoration: 'underline' !default;
   $background-color,
   $color,
   // optional arguments
-  $border-color: $button__border-color,
-  $border-radius: $button__border-radius,
-  $border-style: $button__border-style,
-  $border-width: $button__border-width,
-  $display: 'inline-block',
-  $font-size: $button__font-size,
-  $padding-x: $button__padding-x,
-  $padding-y: $button__padding-y,
+  $border-color:    $button__border-color,
+  $border-radius:   $button__border-radius,
+  $border-style:    $button__border-style,
+  $border-width:    $button__border-width,
+  $display:         'inline-block',
+  $font-size:       $button__font-size,
+  $padding-x:       $button__padding-x,
+  $padding-y:       $button__padding-y,
   $text-decoration: 'none',
-  $transition: $button__transition,
-  $white-space: 'normal',
-  $width: 'auto',
+  $transition:      $button__transition,
+  $white-space:     'normal',
+  $width:           'auto',
   // hover styles
   $hover-background-color: $background-color+'--'+$color+'ened',
-  $hover-text-decoration: 'none'
+  $hover-text-decoration:  'none'
 ){
   @extend %background-color__#{$background-color};
   @extend %border-color__#{$background-color}#{$border-color};
