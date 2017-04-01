@@ -1,12 +1,12 @@
 // Settings
-$input__background-color: white !default;
-$input__border-color:     secondary !default;
+$input__background-color: 'white' !default;
+$input__border-color:     'secondary' !default;
 $input__border-radius:    $base__border-radius !default;
-$input__border-style:     solid !default;
-$input__border-width:     1px !default;
-$input__padding:          2xs !default;
+$input__border-style:     'solid' !default;
+$input__border-width:     '1px' !default;
+$input__padding:          '2xs' !default;
 
-$textarea__resize:        vertical !default;
+$textarea__resize:        'vertical' !default;
 
 // Styles
 input[type="date"],
