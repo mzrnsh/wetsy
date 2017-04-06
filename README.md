@@ -126,6 +126,12 @@ After installing the gem, import `wetsy.scss` into `application.scss`:
 ```scss
 @import "wetsy"
 ```        
+or, if you wish to use Wetsy without any wetsy-resets and components:
+
+```scss
+@import "wetsy/base";
+@import "wetsy/rules";
+```
 Then import your own styles. If you wanna work clean, the Wetsy-way, ideally you should never write selector-specific styles s in your stylesheets - instead extend your selectors with existing wetsy-placeholders.
 
 Even when you need a style like `font-size: 94.3pt`, which obviously is not (yet) available as a wetsy placeholder, instead of directly using that style with your selector, create your own placeholder:
