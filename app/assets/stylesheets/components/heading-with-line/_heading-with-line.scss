@@ -1,0 +1,27 @@
+%heading-with-line {
+  @extend %overflow__hidden;
+  @extend %text-align__center;
+
+  > span {
+    @extend %position__relative;
+    @extend %display__inline-block;
+
+    &:before,
+    &:after {
+      @extend %content__-empty-;
+      @extend %position__absolute;
+      @extend %top__50pct;
+      @extend %border-bottom__2px__solid__secondary;
+      @extend %width__100vw;
+      @extend %margin-x__md;
+    }
+
+    &:before {
+      @extend %right__100pct;
+    }
+
+    &:after {
+      @extend %left__100pct;
+    }
+  }
+}
