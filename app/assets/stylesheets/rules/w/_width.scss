@@ -1,3 +1,5 @@
+@include property-generator--placeholder('width', $spacings);
+
 %width__0 {
   width: 0;
 }
@@ -6,13 +8,13 @@
   width: auto;
 }
 
-/* percents */
+// percents
 
 %width__100pct {
   width: 100%;
 }
 
-/* rems */
+// rems
 
 %width__1rem {
   width: 1rem;
@@ -46,7 +48,7 @@
   width: 30rem;
 }
 
-/* pixels */
+// pixels
 
 %width__1px {
   width: 1px;
@@ -58,4 +60,10 @@
 
 %width__480px {
   width: 480px;
+}
+
+// vw
+
+%width__100vw {
+  width: 100vw;
 }

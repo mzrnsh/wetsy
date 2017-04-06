@@ -1,3 +1,7 @@
+%border-radius__base {
+  @extend %border-radius__#{$base__border-radius};
+}
+
 %border-radius__0 {
   border-radius: 0;
 }

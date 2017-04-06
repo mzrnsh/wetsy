@@ -1,2 +1,6 @@
 @include property-generator--placeholder('right', $spacings);
 @include property-generator--placeholder('right', $spacings, $negative: true);
+
+%right__100pct {
+  right: 100%;
+}

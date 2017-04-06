@@ -1,2 +1,6 @@
 @include property-generator--placeholder('top', $spacings);
 @include property-generator--placeholder('top', $spacings, $negative: true);
+
+%top__50pct {
+  top: 50%;
+}

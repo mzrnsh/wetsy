@@ -1,3 +1,5 @@
+@include property-generator--placeholder('height', $spacings);
+
 %height__1rem {
   height: 1rem;
 }
@@ -16,6 +18,18 @@
 
 %height__2rem {
   height: 2rem;
+}
+
+%height__5rem {
+  height: 5rem;
+}
+
+%height__6rem {
+  height: 6rem;
+}
+
+%height__10rem {
+  height: 10rem;
 }
 
 %height__15rem {
