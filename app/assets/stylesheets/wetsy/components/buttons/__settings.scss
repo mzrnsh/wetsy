@@ -20,6 +20,10 @@ $button--small__padding-y: '3xs' !default;
 $text-button__text-decoration:       'none' !default;
 $text-button__hover-text-decoration: 'underline' !default;
 
+// stripped buttons
+$stripped-button__text-decoration:       'none' !default;
+$stripped-button__hover-text-decoration: 'none' !default;
+
 @mixin button(
   // required arguments
   $background-color,
