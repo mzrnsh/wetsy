@@ -2,6 +2,14 @@
   position: absolute;
 }
 
+%position__fixed {
+  position: fixed;
+}
+
 %position__relative {
   position: relative;
+}
+
+%position__static {
+  position: static;
 }

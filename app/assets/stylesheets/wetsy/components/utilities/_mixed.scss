@@ -14,3 +14,19 @@
   @extend %overflow__hidden;
   @extend %clip__rect_1px_1px_1px_1px;
 }
+
+%text-decoration__never {
+  @extend %text-decoration__none;
+
+  &:hover {
+    @extend %text-decoration__none;
+  }
+}
+
+%underline-on-hover {
+  @extend %text-decoration__none;
+
+  &:hover {
+    @extend %text-decoration__underline;
+  }
+}

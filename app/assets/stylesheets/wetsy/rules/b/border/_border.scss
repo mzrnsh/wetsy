@@ -8,6 +8,14 @@
   border: 1px solid $color-secondary;
 }
 
+%border__1px__solid__light {
+  border: 1px solid $color-light;
+}
+
+%border__1px__solid__transparent {
+  border: 1px solid transparent;
+}
+
 %border__none {
   border: none;
 }
