@@ -1,7 +1,7 @@
 %primary-button--large {
   @include button(
     $background-color: 'primary',
-    $color:            'light',
+    $color:            'white',
     $padding-x:        $button--large__padding-x,
     $padding-y:        $button--large__padding-y
   );
@@ -9,17 +9,18 @@
 
 %secondary-button--large {
   @include button(
-    $background-color: 'secondary',
-    $color:            'dark',
-    $padding-x:        $button--large__padding-x,
-    $padding-y:        $button--large__padding-y
+    $background-color:       'secondary',
+    $color:                  'dark',
+    $hover-background-color: $background-color+'--darkened',
+    $padding-x:              $button--large__padding-x,
+    $padding-y:              $button--large__padding-y
   );
 }
 
 %info-button--large {
   @include button(
     $background-color: 'info',
-    $color:            'light',
+    $color:            'white',
     $padding-x:        $button--large__padding-x,
     $padding-y:        $button--large__padding-y
   );
@@ -28,7 +29,7 @@
 %success-button--large {
   @include button(
     $background-color: 'success',
-    $color:            'light',
+    $color:            'white',
     $padding-x:        $button--large__padding-x,
     $padding-y:        $button--large__padding-y
   );
@@ -37,7 +38,7 @@
 %warning-button--large {
   @include button(
     $background-color: 'warning',
-    $color:            'light',
+    $color:            'white',
     $padding-x:        $button--large__padding-x,
     $padding-y:        $button--large__padding-y
   );
@@ -46,7 +47,7 @@
 %danger-button--large {
   @include button(
     $background-color: 'danger',
-    $color:            'light',
+    $color:            'white',
     $padding-x:        $button--large__padding-x,
     $padding-y:        $button--large__padding-y
   );

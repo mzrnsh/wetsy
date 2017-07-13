@@ -3,7 +3,7 @@
 %primary-button--small {
   @include button(
     $background-color: 'primary',
-    $color:            'light',
+    $color:            'white',
     $font-size:        '0pt875rem',
     $padding-x:        $button--small__padding-x,
     $padding-y:        $button--small__padding-y
@@ -12,18 +12,19 @@
 
 %secondary-button--small {
   @include button(
-    $background-color: 'secondary',
-    $color:            'dark',
-    $font-size:        '0pt875rem',
-    $padding-x:        $button--small__padding-x,
-    $padding-y:        $button--small__padding-y
+    $background-color:       'secondary',
+    $color:                  'dark',
+    $font-size:              '0pt875rem',
+    $hover-background-color: $background-color+'--darkened',
+    $padding-x:              $button--small__padding-x,
+    $padding-y:              $button--small__padding-y
   );
 }
 
 %info-button--small {
   @include button(
     $background-color: 'info',
-    $color:            'light',
+    $color:            'white',
     $font-size:        '0pt875rem',
     $padding-x:        $button--small__padding-x,
     $padding-y:        $button--small__padding-y
@@ -33,7 +34,7 @@
 %success-button--small {
   @include button(
     $background-color: 'success',
-    $color:            'light',
+    $color:            'white',
     $font-size:        '0pt875rem',
     $padding-x:        $button--small__padding-x,
     $padding-y:        $button--small__padding-y
@@ -43,7 +44,7 @@
 %warning-button--small {
   @include button(
     $background-color: 'warning',
-    $color:            'light',
+    $color:            'white',
     $font-size:        '0pt875rem',
     $padding-x:        $button--small__padding-x,
     $padding-y:        $button--small__padding-y
@@ -53,7 +54,7 @@
 %danger-button--small {
   @include button(
     $background-color: 'danger',
-    $color:            'light',
+    $color:            'white',
     $font-size:        '0pt875rem',
     $padding-x:        $button--small__padding-x,
     $padding-y:        $button--small__padding-y

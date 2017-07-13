@@ -4,6 +4,9 @@
   border-color: transparent;
 }
 
+%border-color__rgba__0__0__0__0pt05 {
+  border-color: rgba(0, 0, 0, 0.05);
+}
 
 %border-color__secondary__secondary__transparent__secondary {
   border-color: $color-secondary $color-secondary transparent $color-secondary;
