@@ -11,7 +11,7 @@
   @include button(
     $background-color:       'secondary',
     $color:                  'dark',
-    $hover-background-color: $background-color+'--darkened',
+    $hover-background-color: 'secondary--darkened',
     $padding-x:              $button--large__padding-x,
     $padding-y:              $button--large__padding-y
   );
