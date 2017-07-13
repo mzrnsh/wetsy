@@ -1,7 +1,7 @@
 @include property-generator--placeholder('border-radius', $spacings);
 
 %border-radius__base {
-  @extend %border-radius__#{$base__border-radius};
+  @extend %border-radius__#{$border-radius__base};
 }
 
 %border-radius__0 {

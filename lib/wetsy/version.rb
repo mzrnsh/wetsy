@@ -1,3 +1,3 @@
 module Wetsy
-  VERSION = '0.4.04'
+  VERSION = '0.4.05'
 end
