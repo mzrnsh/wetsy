@@ -56,7 +56,7 @@
 %text-button--large {
   @include button(
     $background-color: 'transparent',
-    $border-color:     '',
+    $border-color:     'transparent',
     $border-radius:    '0',
     $border-style:     'none',
     $border-width:     '0',
@@ -66,6 +66,6 @@
     $text-decoration:  $text-button__text-decoration,
 
     $hover-background-color: 'transparent',
-    $hover-text-decoration: $text-button__hover-text-decoration
+    $hover-text-decoration:  $text-button__hover-text-decoration
   );
 }

@@ -44,7 +44,7 @@
 %stripped-button {
   @include button(
     $background-color: 'transparent',
-    $border-color:     '',
+    $border-color:     'transparent',
     $border-radius:    '0',
     $border-style:     'none',
     $border-width:     '0',
