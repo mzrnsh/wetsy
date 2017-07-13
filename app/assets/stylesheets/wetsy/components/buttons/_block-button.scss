@@ -31,7 +31,7 @@
 %text-block-button {
   @include button(
     $background-color:       'transparent',
-    $border-color:           '',
+    $border-color:           'transparent',
     $border-style:           'none',
     $border-width:           '0',
     $color:                  'primary',
