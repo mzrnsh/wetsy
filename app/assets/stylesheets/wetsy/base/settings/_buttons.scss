@@ -4,6 +4,7 @@ $button__border-radius: $border-radius__base   !default;
 $button__border-style:  'solid'                !default;
 $button__border-width:  '1px'                  !default;
 $button__font-size:     '1rem'                 !default;
+$button__line-height:   'inherit'              !default;
 $button__padding-x:     'sm'                   !default;
 $button__padding-y:     '2xs'                  !default;
 $button__transition:    'background'           !default;
@@ -35,6 +36,7 @@ $stripped-button__hover-text-decoration: 'none' !default;
   $border-width:    $button__border-width,
   $display:         'inline-block',
   $font-size:       $button__font-size,
+  $line-height:     $button__line-height,
   $padding-x:       $button__padding-x,
   $padding-y:       $button__padding-y,
   $text-decoration: 'none',
@@ -54,6 +56,7 @@ $stripped-button__hover-text-decoration: 'none' !default;
   @extend %cursor__pointer;
   @extend %display__#{$display};
   @extend %font-size__#{$font-size};
+  @extend %line-height__#{$line-height};
   @extend %padding-x__#{$padding-x};
   @extend %padding-y__#{$padding-y};
   @extend %text-align__center;
