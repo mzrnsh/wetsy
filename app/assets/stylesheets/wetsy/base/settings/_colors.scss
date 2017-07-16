@@ -3,10 +3,10 @@ $color-lighten-percentage: 7.5% !default;
 $color-darken-percentage:  7.5% !default;
 
 // Default colors. Values should be overridden by host project settings
-$color-brand-1: #ffffff !default;
-$color-brand-2: #ffffff !default;
-$color-brand-3: #ffffff !default;
-$color-brand-4: #ffffff !default;
+$color-brand-1:   #ffffff !default;
+$color-brand-2:   #ffffff !default;
+$color-brand-3:   #ffffff !default;
+$color-brand-4:   #ffffff !default;
 
 $color-primary:   #265cad !default;
 $color-secondary: #d3d4d9 !default;
@@ -15,15 +15,17 @@ $color-success:   #7bc950 !default;
 $color-warning:   #ffd131 !default;
 $color-danger:    #e4572e !default;
 
-$color-dark:  #343434 !default;
-$color-light: #f9f9f9 !default;
-$color-pale:  #b7b7b7 !default;
+$color-link:      $color-primary !default;
+
+$color-dark:      #343434 !default;
+$color-light:     #f9f9f9 !default;
+$color-pale:      #b7b7b7 !default;
 
 $base-colors: (
-  brand-1: $color-brand-1,
-  brand-2: $color-brand-2,
-  brand-3: $color-brand-3,
-  brand-4: $color-brand-4,
+  brand-1:   $color-brand-1,
+  brand-2:   $color-brand-2,
+  brand-3:   $color-brand-3,
+  brand-4:   $color-brand-4,
 
   primary:   $color-primary,
   secondary: $color-secondary,
@@ -32,9 +34,9 @@ $base-colors: (
   warning:   $color-warning,
   danger:    $color-danger,
 
-  dark:  $color-dark,
-  light: $color-light,
-  pale:  $color-pale
+  dark:      $color-dark,
+  light:     $color-light,
+  pale:      $color-pale
 );
 
 // $custom-colors is an empty default, allowing host project

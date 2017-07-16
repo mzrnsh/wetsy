@@ -4,7 +4,7 @@ img {
 }
 
 a {
-  @extend %color__primary;
+  @extend %color__link;
   @extend %text-decoration__none;
 }
 
