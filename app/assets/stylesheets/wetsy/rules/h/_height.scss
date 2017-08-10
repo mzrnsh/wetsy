@@ -1,5 +1,15 @@
 @include property-generator--placeholder('height', $spacings);
 
+%height__auto {
+  height: auto;
+}
+
+// Percents
+%height__100pct {
+  height: 100%;
+}
+
+// Rems
 %height__1rem {
   height: 1rem;
 }
@@ -36,6 +46,7 @@
   height: 15rem;
 }
 
+// Pixels
 %height__1px {
 	height: 1px;
 }
@@ -50,4 +61,13 @@
 
 %height__600px {
   height: 600px;
+}
+
+%height__800px {
+  height: 800px;
+}
+
+// Viewport
+%height__100vh {
+  height: 100vh;
 }

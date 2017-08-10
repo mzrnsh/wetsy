@@ -11,3 +11,7 @@
 %transition__box-shadow {
   @include transition(box-shadow, $transition-duration__base)
 }
+
+%transition__color {
+  @include transition(color, $transition-duration__base);
+}

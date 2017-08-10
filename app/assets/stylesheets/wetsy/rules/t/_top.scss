@@ -1,6 +1,29 @@
 @include property-generator--placeholder('top', $spacings);
 @include property-generator--placeholder('top', $spacings, $negative: true);
 
+// Percents
+%top__40pct {
+  top: 40%;
+}
+
+%top__42pt5pct {
+  top: 42.5%;
+}
+
+%top__45pct {
+  top: 45%;
+}
+
 %top__50pct {
   top: 50%;
+}
+
+
+%top__100pct {
+  top: 100%;
+}
+
+// Pixels
+%top__2px {
+  top: 2px;
 }

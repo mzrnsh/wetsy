@@ -9,9 +9,12 @@
 }
 
 // percents
-
 %width__20pct {
   width: 20%;
+}
+
+%width__80pct {
+  width: 80%;
 }
 
 %width__100pct {
@@ -19,7 +22,6 @@
 }
 
 // rems
-
 %width__1rem {
   width: 1rem;
 }
@@ -53,7 +55,6 @@
 }
 
 // pixels
-
 %width__1px {
   width: 1px;
 }
@@ -67,7 +68,6 @@
 }
 
 // vw
-
 %width__100vw {
   width: 100vw;
 }

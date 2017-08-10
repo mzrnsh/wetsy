@@ -1,5 +1,4 @@
 // Rems
-
 %min-width__1rem {
   min-width: 1rem;
 }
@@ -25,6 +24,22 @@
 }
 
 // Pixels
+%min-width__110px {
+  min-width: 110px;
+}
+
 %min-width__240px {
   min-width: 240px;
+}
+
+%min-width__480px {
+  min-width: 480px;
+}
+
+%min-width__600px {
+  min-width: 600px;
+}
+
+%min-width__840px {
+  min-width: 840px;
 }

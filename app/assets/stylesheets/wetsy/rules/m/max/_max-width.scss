@@ -6,8 +6,7 @@
   max-width: $box-content-width;
 }
 
-/* percents */
-
+// Percents
 %max-width__50pct {
   max-width: 50%;
 }
@@ -20,8 +19,7 @@
   max-width: 100%;
 }
 
-/* rems */
-
+// Rems
 %max-width__10rem {
   max-width: 10rem;
 }
@@ -38,8 +36,7 @@
   max-width: 30rem;
 }
 
-/* pixels */
-
+// Pixels
 %max-width__240px {
   max-width: 240px;
 }
@@ -56,6 +53,6 @@
   max-width: 480px;
 }
 
-%max-width__400px {
-  max-width: 400px;
+%max-width__600px {
+  max-width: 600px;
 }

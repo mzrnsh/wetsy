@@ -1,3 +1,7 @@
 %border-top-left-radius__base {
-  border-top-left-radius: #{$border-radius__base};
+  border-top-left-radius: #{ $border-radius__base };
+}
+
+%border-top-right-radius__base {
+  border-top-right-radius: #{ $border-radius__base };
 }
