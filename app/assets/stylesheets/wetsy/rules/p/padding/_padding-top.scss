@@ -1,1 +1,5 @@
 @include property-generator--placeholder('padding-top', $spacings);
+
+%padding-top__5px {
+  padding-top: 5px;
+}

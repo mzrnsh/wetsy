@@ -16,6 +16,7 @@
 }
 
 %text-decoration__never {
+  // TODO rename this to %underline-never
   @extend %text-decoration__none;
 
   &:hover {
