@@ -42,7 +42,7 @@ $stripped-button__hover-text-decoration: 'none' !default;
   $padding-y:       $button__padding-y,
   $text-decoration: 'none',
   $transition:      $button__transition,
-  $white-space:     'normal',
+  $white-space:     $button__white-space,
   $width:           'auto',
   // hover styles
   $hover-background-color: $background-color+'--lightened',
