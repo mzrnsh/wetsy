@@ -1,1 +1,9 @@
 @include property-generator--placeholder('margin-bottom', $spacings);
+
+%margin-bottom__-8px {
+  margin-bottom: -8px;
+}
+
+%margin-bottom__12px {
+  margin-bottom: 12px;
+}

@@ -13,6 +13,19 @@
   width: 20%;
 }
 
+%width__25pct {
+  width: 25%;
+}
+
+%width__50pct {
+  width: 50%;
+}
+
+%width__75pct {
+  width: 75%;
+}
+
+
 %width__80pct {
   width: 80%;
 }
@@ -61,6 +74,10 @@
 // pixels
 %width__1px {
   width: 1px;
+}
+
+%width__40px {
+  width: 40px;
 }
 
 %width__100px {
