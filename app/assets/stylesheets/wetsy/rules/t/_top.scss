@@ -18,12 +18,20 @@
   top: 50%;
 }
 
-
 %top__100pct {
   top: 100%;
 }
 
+// Rems
+%top__1pt5rem {
+  top: 1.5rem;
+}
+
 // Pixels
+%top__1px {
+  top: 1px;
+}
+
 %top__2px {
   top: 2px;
 }

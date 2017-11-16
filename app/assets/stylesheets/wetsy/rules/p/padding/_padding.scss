@@ -1,5 +1,17 @@
 @include property-generator--placeholder('padding', $spacings);
 
+%padding__1px {
+  padding: 1px;
+}
+
+%padding__10px {
+  padding: 10px;
+}
+
 %padding__12px {
   padding: 12px;
+}
+
+%padding__20px {
+  padding: 20px;
 }

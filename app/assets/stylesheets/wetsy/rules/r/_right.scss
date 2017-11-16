@@ -1,6 +1,17 @@
 @include property-generator--placeholder('right', $spacings);
 @include property-generator--placeholder('right', $spacings, $negative: true);
 
+// Percents
 %right__100pct {
   right: 100%;
+}
+
+// Rems
+%right__1rem {
+  right: 1rem;
+}
+
+// Pixels
+%right__1px {
+  right: 1px;
 }

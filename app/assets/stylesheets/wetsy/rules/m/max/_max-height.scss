@@ -1,5 +1,10 @@
 @include property-generator--placeholder('max-height', $spacings);
 
+// Percents
+%max-height__100pct {
+  max-height: 100%;
+}
+
 // Rems
 %max-height__2pt5rem {
   max-height: 2.5rem;
@@ -8,4 +13,8 @@
 // Pixels
 %max-height__48px {
   max-height: 48px;
+}
+
+%max-height__240px {
+  max-height: 240px;
 }

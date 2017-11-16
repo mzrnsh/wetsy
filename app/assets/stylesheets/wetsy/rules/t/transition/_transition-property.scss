@@ -1,3 +1,11 @@
+%transition-property__background-color__color {
+  transition-property: background-color, color;
+}
+
+%transition-property__border-color {
+  transition-property: border-color;
+}
+
 %transition-property__color {
  transition-property: color;
 }
@@ -8,8 +16,4 @@
 
 %transition-property__color__opacity {
   transition-property: color, opacity;
-}
-
-%transition-property__background-color__color {
-  transition-property: background-color, color;
 }

@@ -1,7 +1,40 @@
+%flex-basis__auto {
+  flex-basis: auto;
+}
+
+%flex-basis__0 {
+  flex-basis: 0;
+}
+
+@include property-generator--placeholder('flex-basis', $spacings);
+
+// Percents
+%flex-basis__50pct {
+  flex-basis: 50%;
+}
+
+%flex-basis__100pct {
+  flex-basis: 100%;
+}
+
+// Rems
 %flex-basis__10rem {
   flex-basis: 10rem;
 }
 
 %flex-basis__20rem {
   flex-basis: 20rem;
+}
+
+// Pixels
+%flex-basis__180px {
+  flex-basis: 180px;
+}
+
+%flex-basis__240px {
+  flex-basis: 240px;
+}
+
+%flex-basis__300px {
+  flex-basis: 300px;
 }

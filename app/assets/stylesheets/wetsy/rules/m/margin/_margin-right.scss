@@ -1,8 +1,8 @@
-@include property-generator--placeholder('margin-right', $spacings);
-
 %margin-right__auto {
   margin-right: auto;
 }
+
+@include property-generator--placeholder('margin-right', $spacings);
 
 %margin-right__1px {
   margin-right: 1px;
@@ -10,6 +10,10 @@
 
 %margin-right__8px {
   margin-right: 8px;
+}
+
+%margin-right__12px {
+  margin-right: 12px;
 }
 
 %margin-right__20px {

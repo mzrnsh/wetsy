@@ -10,6 +10,23 @@
   font-size: inherit;
 }
 
+// Percents
+%font-size__75pct {
+  font-size: 75%;
+}
+
+%font-size__80pct {
+  font-size: 80%;
+}
+
+%font-size__87pt5pct {
+  font-size: 87.5%;
+}
+
+%font-size__115pct {
+  font-size: 115%;
+}
+
 // Rems
 %font-size__0pt75rem {
   font-size: 0.75rem;
@@ -39,20 +56,15 @@
   font-size: 2rem;
 }
 
-// Percents
-%font-size__80pct {
-  font-size: 80%;
-}
-
-%font-size__87pt5pct {
-  font-size: 87.5%;
-}
-
-%font-size__115pct {
-  font-size: 115%;
+%font-size__2pt5rem {
+  font-size: 2.5rem;
 }
 
 // Pixels
+%font-size__11px {
+  font-size: 11px;
+}
+
 %font-size__12px {
   font-size: 12px;
 }
@@ -63,6 +75,10 @@
 
 %font-size__16px {
   font-size: 16px;
+}
+
+%font-size__18px {
+  font-size: 18px;
 }
 
 %font-size__24px {

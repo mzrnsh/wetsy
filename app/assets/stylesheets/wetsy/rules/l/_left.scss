@@ -1,6 +1,14 @@
 @include property-generator--placeholder('left', $spacings);
 @include property-generator--placeholder('left', $spacings, $negative: true);
 
+%left__45pct {
+  left: 45%;
+}
+
+%left__50pct {
+  left: 50%;
+}
+
 %left__100pct {
   left: 100%;
 }

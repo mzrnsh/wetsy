@@ -1,0 +1,9 @@
+@mixin margin-x($value) {
+  @extend %margin-left__#{$value};
+  @extend %margin-right__#{$value};
+}
+
+@mixin margin-y($value) {
+  @extend %margin-bottom__#{$value};
+  @extend %margin-top__#{$value};
+}

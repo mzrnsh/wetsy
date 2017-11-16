@@ -4,3 +4,8 @@
     @extend %padding-left__#{$key};
   }
 }
+
+%padding-x__20px {
+  @extend %padding-left__20px;
+  @extend %padding-right__20px;
+}

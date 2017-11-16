@@ -3,6 +3,13 @@
   @extend %border__1px__solid__secondary;
 }
 
+%border__none {
+  border: none;
+}
+
+%border__0 {
+  border: 0;
+}
 
 %border__1px__solid__secondary {
   border: 1px solid $color-secondary;
@@ -16,10 +23,18 @@
   border: 1px solid transparent;
 }
 
-%border__none {
-  border: none;
+%border__1px__solid__pale {
+  border: 1px solid $color-pale;
+}
+
+%border__1px__solid__warning {
+  border: 1px solid $color-warning;
 }
 
 %border__1px__solid {
   border: 1px solid;
+}
+
+%border__2px__solid__danger {
+  border: 2px solid $color-danger;
 }

@@ -1,8 +1,8 @@
-@include property-generator--placeholder('margin-left', $spacings);
-
 %margin-left__auto {
   margin-left: auto;
 }
+
+@include property-generator--placeholder('margin-left', $spacings);
 
 %margin-left__100pct {
   margin-left: 100%;
@@ -10,4 +10,8 @@
 
 %margin-left__1px {
   margin-left: 1px;
+}
+
+%margin-left__12px {
+  margin-left: 12px;
 }

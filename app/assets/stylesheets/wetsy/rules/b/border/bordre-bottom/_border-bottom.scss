@@ -2,6 +2,10 @@
   @extend %border-bottom__1px__solid__secondary;
 }
 
+%border-bottom__0 {
+  border-bottom: 0;
+}
+
 %border-bottom__1px__solid__secondary {
   border-bottom: 1px solid $color-secondary;
 }

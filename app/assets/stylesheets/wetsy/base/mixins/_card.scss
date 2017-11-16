@@ -1,0 +1,17 @@
+@mixin card(
+  $background-color: 'white',
+  $border:           'base',
+  $border-radius:    'base',
+  $display:          'block',
+  $margin:           '0',
+  $padding:          'md',
+  $width:            '100pct'
+  ){
+  @extend %background-color__#{$background-color};
+  @extend %border__#{$border};
+  @extend %border-radius__#{$border-radius};
+  @extend %display__#{$display};
+  @extend %margin__#{$margin};
+  @extend %padding__#{$padding};
+  @extend %width__#{$width};
+}

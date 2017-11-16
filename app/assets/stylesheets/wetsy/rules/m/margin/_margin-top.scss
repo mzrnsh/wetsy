@@ -1,1 +1,17 @@
+%margin-top__auto {
+  margin-top: auto;
+}
+
 @include property-generator--placeholder('margin-top', $spacings);
+
+%margin-top__8px {
+  margin-top: 8px;
+}
+
+%margin-top__10px {
+  margin-top: 10px;
+}
+
+%margin-top__12px {
+  margin-top: 12px;
+}
