@@ -1,12 +1,26 @@
 @include property-generator--placeholder('bottom', $spacings);
 @include property-generator--placeholder('top', $spacings, $negative: true);
 
+%bottom__auto {
+  bottom: auto;
+}
+
+// Percents
+%bottom__50pct {
+  bottom: 50%;
+}
+
+// Rems
 %bottom__0pt5em {
   bottom: 0.5em;
 }
 
-%bottom__50pct {
-  bottom: 50%;
+%bottom__1pt5rem {
+  bottom: 1.5rem;
+}
+
+%bottom__2rem {
+  bottom: 2rem;
 }
 
 // Pixels
