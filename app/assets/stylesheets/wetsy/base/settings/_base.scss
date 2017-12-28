@@ -1,12 +1,16 @@
-$border-radius__base:       0                               !default;
-$border__base:              1px solid #{ $color-secondary } !default;
+$border-radius__base:       0                                        !default;
+$border__base:              1px solid #{ $color-secondary }          !default;
+$border-color__base:        'secondary'                              !default;
 
-$box-content-width:         960px                           !default;
-$small-screen:              600px                           !default;
+$box-shadow__base:          0 0 10px 0 darken($color-secondary, 10%) !default;
 
-$card-image-height:         240px                           !default;
+$box-content-width:         960px                                    !default;
+$small-screen:              600px                                    !default;
 
-$transition-duration__base: .1s                             !default;
+$card-image-height:         240px                                    !default;
 
-$line-height__base:         '1pt375'                        !default; // TODO it might be necessary to access numeric value
-$line-height__base-value:   1.375                           !default; // of base line height. Need a more elegant way to handle this. Maybe parser that would substitute '.' with 'pt' if necessary
+$transition-duration__base: .1s                                      !default;
+
+$line-height__base:         '1pt375'                                 !default; // TODO it might be necessary to access numeric value
+$line-height__base-value:   1.375                                    !default; // of base line height. Need a more elegant way to handle this.
+                                                                               // Maybe parser that would substitute '.' with 'pt' if necessary

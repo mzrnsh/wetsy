@@ -1,5 +1,9 @@
 @include property-generator--placeholder('border-color', $colors);
 
+%border-color__base {
+  @extend %border-color__#{$border-color__base};
+}
+
 %border-color__transparent {
   border-color: transparent;
 }

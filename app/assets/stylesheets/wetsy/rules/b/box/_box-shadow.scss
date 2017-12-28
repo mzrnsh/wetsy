@@ -2,6 +2,10 @@
   box-shadow: none;
 }
 
+%box-shadow__base {
+  box-shadow: $box-shadow__base;
+}
+
 %box-shadow__inset__0__0__0__1000px__dark-transparent {
   box-shadow: inset 0 0 0 1000px rgba($color-dark, .25);
 }
