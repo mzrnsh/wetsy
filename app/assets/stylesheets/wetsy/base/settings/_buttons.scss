@@ -48,6 +48,7 @@ $stripped-button__hover-text-decoration: 'none' !default;
   $width:           'auto',
   // hover styles
   $hover-background-color: $background-color+'--lightened',
+  $hover-color:            $color,
   $hover-text-decoration:  'none'
 ){
   @extend %background-color__#{$background-color};
@@ -68,6 +69,10 @@ $stripped-button__hover-text-decoration: 'none' !default;
   @extend %transition__#{$transition};
   @extend %white-space__#{$white-space};
   @extend %width__#{$width};
+
+  &:hover {
+    @extend %color__#{$hover-color};
+  }
 
   &:hover:not([disabled="disabled"]) {
     @extend %background-color__#{$hover-background-color};
