@@ -1,10 +1,10 @@
-// TODO see if our negative spacing generator can be used here
+// TODO see if our negative measure generator can be used here
 %margin-y__-xs {
-  margin-bottom: -$spacing-xs;
-  margin-top: -$spacing-xs;
+  margin-bottom: -$measure-xs;
+  margin-top:    -$measure-xs;
 }
 
-@each $key, $value in $spacings {
+@each $key, $value in $measures {
   %margin-y__#{$key} {
     @extend %margin-bottom__#{$key};
     @extend %margin-top__#{$key};

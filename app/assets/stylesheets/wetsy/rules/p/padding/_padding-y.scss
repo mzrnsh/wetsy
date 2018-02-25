@@ -1,4 +1,4 @@
-@each $key, $value in $spacings {
+@each $key, $value in $measures {
   %padding-y__#{$key} {
     @extend %padding-bottom__#{$key};
     @extend %padding-top__#{$key};

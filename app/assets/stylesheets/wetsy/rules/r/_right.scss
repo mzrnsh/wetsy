@@ -1,5 +1,5 @@
-@include property-generator--placeholder('right', $spacings);
-@include property-generator--placeholder('right', $spacings, $negative: true);
+@include property-generator--placeholder('right', $measures);
+@include property-generator--placeholder('right', $measures, $negative: true);
 
 %right__auto {
   right: auto;

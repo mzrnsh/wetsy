@@ -1,5 +1,5 @@
-@include property-generator--placeholder('top', $spacings);
-@include property-generator--placeholder('top', $spacings, $negative: true);
+@include property-generator--placeholder('top', $measures);
+@include property-generator--placeholder('top', $measures, $negative: true);
 
 %top__auto {
   top: auto;

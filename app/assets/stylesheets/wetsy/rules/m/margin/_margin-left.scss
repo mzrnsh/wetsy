@@ -2,7 +2,7 @@
   margin-left: auto;
 }
 
-@include property-generator--placeholder('margin-left', $spacings);
+@include property-generator--placeholder('margin-left', $measures);
 
 %margin-left__100pct {
   margin-left: 100%;

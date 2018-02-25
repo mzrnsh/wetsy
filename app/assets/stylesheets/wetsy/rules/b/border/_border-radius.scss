@@ -1,4 +1,4 @@
-@include property-generator--placeholder('border-radius', $spacings);
+@include property-generator--placeholder('border-radius', $measures);
 
 %border-radius__base {
   @extend %border-radius__#{$border-radius__base};

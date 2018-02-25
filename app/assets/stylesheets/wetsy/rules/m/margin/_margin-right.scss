@@ -2,7 +2,7 @@
   margin-right: auto;
 }
 
-@include property-generator--placeholder('margin-right', $spacings);
+@include property-generator--placeholder('margin-right', $measures);
 
 %margin-right__1px {
   margin-right: 1px;

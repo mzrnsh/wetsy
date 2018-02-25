@@ -6,7 +6,7 @@
   flex-basis: 0;
 }
 
-@include property-generator--placeholder('flex-basis', $spacings);
+@include property-generator--placeholder('flex-basis', $measures);
 
 // Percents
 %flex-basis__50pct {

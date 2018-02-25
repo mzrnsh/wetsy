@@ -1,0 +1,65 @@
+$measure-base: 1rem          !default;
+$measure-translate-to-px: 16 !default;
+
+$measure-3xs: 0.125 !default;
+$measure-2xs: 0.25  !default;
+$measure-xs:  0.5   !default;
+$measure-sm:  0.75  !default;
+$measure-md:  1     !default;
+$measure-lg:  2     !default;
+$measure-xl:  3     !default;
+$measure-2xl: 5     !default;
+$measure-3xl: 10    !default;
+
+$wetsy-size-3xs: $measure-base * $measure-3xs;
+$wetsy-size-2xs: $measure-base * $measure-2xs;
+$wetsy-size-xs:  $measure-base * $measure-xs;
+$wetsy-size-sm:  $measure-base * $measure-sm;
+$wetsy-size-md:  $measure-base * $measure-md;
+$wetsy-size-lg:  $measure-base * $measure-lg;
+$wetsy-size-xl:  $measure-base * $measure-xl;
+$wetsy-size-2xl: $measure-base * $measure-2xl;
+$wetsy-size-3xl: $measure-base * $measure-3xl;
+
+$measures: (
+        0: 0,
+      3xs: $wetsy-size-3xs,
+      2xs: $wetsy-size-2xs,
+       xs: $wetsy-size-xs,
+       sm: $wetsy-size-sm,
+       md: $wetsy-size-md,
+       lg: $wetsy-size-lg,
+       xl: $wetsy-size-xl,
+      2xl: $wetsy-size-2xl,
+      3xl: $wetsy-size-3xl,
+
+  3xs--em: $measure-3xs + em,
+  2xs--em: $measure-2xs + em,
+   xs--em: $measure-xs  + em,
+   sm--em: $measure-sm  + em,
+   md--em: $measure-md  + em,
+   lg--em: $measure-lg  + em,
+   xl--em: $measure-xl  + em,
+  2xl--em: $measure-2xl + em,
+  3xl--em: $measure-3xl + em,
+
+ 3xs--rem: $measure-3xs + rem,
+ 2xs--rem: $measure-2xs + rem,
+  xs--rem: $measure-xs  + rem,
+  sm--rem: $measure-sm  + rem,
+  md--rem: $measure-md  + rem,
+  lg--rem: $measure-lg  + rem,
+  xl--rem: $measure-xl  + rem,
+ 2xl--rem: $measure-2xl + rem,
+ 3xl--rem: $measure-3xl + rem,
+
+  3xs--px: $measure-3xs * $measure-translate-to-px + px,
+  2xs--px: $measure-2xs * $measure-translate-to-px + px,
+   xs--px: $measure-xs  * $measure-translate-to-px + px,
+   sm--px: $measure-sm  * $measure-translate-to-px + px,
+   md--px: $measure-md  * $measure-translate-to-px + px,
+   lg--px: $measure-lg  * $measure-translate-to-px + px,
+   xl--px: $measure-xl  * $measure-translate-to-px + px,
+  2xl--px: $measure-2xl * $measure-translate-to-px + px,
+  3xl--px: $measure-3xl * $measure-translate-to-px + px,
+);

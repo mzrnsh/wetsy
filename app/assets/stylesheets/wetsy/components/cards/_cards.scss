@@ -10,8 +10,8 @@
   @extend %margin__xs;
   @extend %display__inline-block;
   @extend %border__1px__solid__secondary;
-  min-width: calc(100%/3 - #{$spacing-md});
-  max-width: calc(100% - #{$spacing-md});
+  min-width: calc(100%/3 - #{$measure-md});
+  max-width: calc(100% - #{$measure-md});
   width: calc((#{$small-screen} - 100vw) * #{$small-screen / 1px});
 }
 

@@ -2,7 +2,7 @@
   margin-top: auto;
 }
 
-@include property-generator--placeholder('margin-top', $spacings);
+@include property-generator--placeholder('margin-top', $measures);
 
 %margin-top__8px {
   margin-top: 8px;

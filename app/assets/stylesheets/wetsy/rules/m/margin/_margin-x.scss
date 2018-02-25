@@ -9,11 +9,11 @@
 }
 
 %margin-x__-xs {
-  margin-left: -$spacing-xs;
-  margin-right: -$spacing-xs;
+  margin-left: -$measure-xs;
+  margin-right: -$measure-xs;
 }
 
-@each $key, $value in $spacings {
+@each $key, $value in $measures {
   %margin-x__#{$key} {
     @extend %margin-right__#{$key};
     @extend %margin-left__#{$key};
