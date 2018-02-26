@@ -9,8 +9,8 @@
 }
 
 %margin-x__-xs {
-  margin-left: -$measure-xs;
-  margin-right: -$measure-xs;
+  margin-left: -$wetsy-size-xs;
+  margin-right: -$wetsy-size-xs;
 }
 
 @each $key, $value in $measures {
