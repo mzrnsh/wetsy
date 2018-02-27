@@ -1,5 +1,14 @@
 %border-top-left-radius__base {
-  border-top-left-radius: #{ $border-radius__base };
+  border-top-left-radius: $border-radius__base;
+}
+
+%border-top-left-radius__0 {
+  border-top-left-radius: 0;
+}
+
+// Pixels
+%border-top-left-radius__2px {
+  border-top-left-radius: 2px;
 }
 
 %border-top-left-radius__6px {

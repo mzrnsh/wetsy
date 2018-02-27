@@ -2,6 +2,24 @@
   min-width: 0;
 }
 
+// Percents
+%min-width__100pct {
+  min-width: 100%;
+}
+
+// Ems
+%min-width__1em {
+  min-width: 1em;
+}
+
+%min-width__2em {
+  min-width: 2em;
+}
+
+%min-width__10em {
+  min-width: 10em;
+}
+
 // Rems
 %min-width__1rem {
   min-width: 1rem;

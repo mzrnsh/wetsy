@@ -6,6 +6,10 @@
 }
 
 // Percents
+%top__35pct {
+  top: 35%;
+}
+
 %top__40pct {
   top: 40%;
 }
@@ -26,6 +30,23 @@
   top: 100%;
 }
 
+// Ems
+%top__-0pt125em {
+  top: -0.125em;
+}
+
+%top__0pt125em {
+  top: 0.125em;
+}
+
+%top__1pt5em {
+  top: 1.5em;
+}
+
+%top__2em {
+  top: 2em;
+}
+
 // Rems
 %top__1pt5rem {
   top: 1.5rem;
@@ -36,6 +57,10 @@
 }
 
 // Pixels
+%top__-2px {
+  top: -2px;
+}
+
 %top__1px {
   top: 1px;
 }

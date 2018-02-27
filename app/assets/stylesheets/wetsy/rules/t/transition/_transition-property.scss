@@ -6,6 +6,10 @@
   transition-property: border-color;
 }
 
+%transition-property__border-color__box-shadow {
+  transition-property: border-color, box-shadow;
+}
+
 %transition-property__color {
  transition-property: color;
 }
@@ -16,4 +20,8 @@
 
 %transition-property__color__opacity {
   transition-property: color, opacity;
+}
+
+%transition-property__transform {
+  transition-property: transform;
 }

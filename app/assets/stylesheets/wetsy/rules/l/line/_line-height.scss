@@ -1,5 +1,13 @@
 @include property-generator--placeholder('line-height', $measures);
 
+%line-height__base {
+  @extend %line-height__#{$line-height__base};
+}
+
+%line-height__inherit {
+  line-height: inherit;
+}
+
 %line-height__1 {
   line-height: 1;
 }
@@ -36,18 +44,21 @@
   line-height: 2.5;
 }
 
+// Ems
+%line-height__1em {
+  line-height: 1em;
+}
+
+%line-height__1pt5em {
+  line-height: 1.5em;
+}
+
+
+// Rems
 %line-height__1rem {
   line-height: 1rem;
 }
 
 %line-height__1pt5rem {
   line-height: 1.5rem;
-}
-
-%line-height__inherit {
-  line-height: inherit;
-}
-
-%line-height__base {
-  @extend %line-height__#{$line-height__base};
 }

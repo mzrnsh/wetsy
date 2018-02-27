@@ -1,5 +1,9 @@
 @include property-generator--placeholder('margin-bottom', $measures);
 
+%margin-bottom__1rem {
+  margin-bottom: 1rem;
+}
+
 %margin-bottom__5rem {
   margin-bottom: 5rem;
 }

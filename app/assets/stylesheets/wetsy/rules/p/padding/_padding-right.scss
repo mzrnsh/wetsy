@@ -1,5 +1,10 @@
 @include property-generator--placeholder('padding-right', $measures);
 
+// Ems
+%padding-right__0pt15em {
+  padding-right: 0.15em;
+}
+
 // Rems
 %padding-right__5rem {
   padding-right: 5rem;

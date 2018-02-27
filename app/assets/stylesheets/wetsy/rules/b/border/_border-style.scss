@@ -1,3 +1,7 @@
+%border-style__base {
+  border-style: $border-style__base; // TODO maybe this can extend one of below styles as the set is limited
+}
+
 %border-style__dashed {
   border-style: dashed;
 }

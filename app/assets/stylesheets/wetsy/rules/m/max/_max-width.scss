@@ -19,6 +19,19 @@
   max-width: 100%;
 }
 
+// Ems
+%max-width__10em {
+  max-width: 10em;
+}
+
+%max-width__20em {
+  max-width: 20em;
+}
+
+%max-width__30em {
+  max-width: 30em;
+}
+
 // Rems
 %max-width__4rem {
   max-width: 4rem;
@@ -63,4 +76,12 @@
 
 %max-width__600px {
   max-width: 600px;
+}
+
+%max-width__960px {
+  max-width: 960px;
+}
+
+%max-width__1200px {
+  max-width: 1200px;
 }

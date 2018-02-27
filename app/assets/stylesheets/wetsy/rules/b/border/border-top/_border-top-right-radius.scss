@@ -1,3 +1,12 @@
 %border-top-right-radius__base {
-  border-top-right-radius: #{ $border-radius__base };
+  border-top-right-radius: $border-radius__base;
+}
+
+%border-top-right-radius__0 {
+  border-top-right-radius: 0;
+}
+
+// Pixels
+%border-top-right-radius__2px {
+  border-top-right-radius: 2px;
 }

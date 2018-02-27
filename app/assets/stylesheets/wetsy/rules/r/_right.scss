@@ -10,9 +10,23 @@
   right: 100%;
 }
 
+// Ems
+%right__1em {
+  right: 1em;
+}
+
+
 // Rems
+%right__-0pt5rem {
+  right: -0.5rem;
+}
+
 %right__1rem {
   right: 1rem;
+}
+
+%right__1pt5rem {
+  right: 1.5rem;
 }
 
 // Pixels

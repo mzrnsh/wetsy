@@ -1,3 +1,5 @@
+@include property-generator--placeholder('font-size', $measures);
+
 %font-size__body {
   font-size: $font-size-body;
 }
@@ -11,6 +13,10 @@
 }
 
 // Percents
+%font-size__66pct {
+  font-size: 66%;
+}
+
 %font-size__75pct {
   font-size: 75%;
 }
@@ -19,13 +25,40 @@
   font-size: 80%;
 }
 
+%font-size__85pct {
+  font-size: 85%;
+}
+
 %font-size__87pt5pct {
   font-size: 87.5%;
+}
+
+%font-size__100pct {
+  font-size: 100%;
 }
 
 %font-size__115pct {
   font-size: 115%;
 }
+
+%font-size__133pct {
+  font-size: 133%;
+}
+
+%font-size__200pct {
+  font-size: 200%;
+}
+
+// Ems
+
+%font-size__1em {
+  font-size: 1em;
+}
+
+%font-size__1pt25em {
+  font-size: 1.25em;
+}
+
 
 // Rems
 %font-size__0pt75rem {

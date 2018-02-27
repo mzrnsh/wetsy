@@ -1,5 +1,14 @@
 @include property-generator--placeholder('padding-top', $measures);
 
+// Pixels
+%padding-top__1px {
+  padding-top: 1px;
+}
+
+%padding-top__2px {
+  padding-top: 2px;
+}
+
 %padding-top__5px {
   padding-top: 5px;
 }

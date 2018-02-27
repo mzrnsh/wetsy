@@ -2,6 +2,11 @@
   border-bottom-left-radius: #{ $border-radius__base };
 }
 
+%border-bottom-left-radius__0 {
+  border-bottom-left-radius: 0;
+}
+
+// Pixels
 %border-bottom-left-radius__6px {
   border-bottom-left-radius: 6px;
 }

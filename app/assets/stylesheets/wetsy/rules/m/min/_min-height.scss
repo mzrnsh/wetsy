@@ -1,7 +1,19 @@
+// Percents
 %min-height__100pct {
   min-height: 100%;
 }
 
+// Ems
+%min-height__2em {
+  min-height: 2em;
+}
+
+%min-height__5em {
+  min-height: 5em;
+}
+
+
+// Rems
 %min-height__1rem {
   min-height: 1rem;
 }
@@ -22,6 +34,7 @@
   min-height: 5rem;
 }
 
+// Pixels
 %min-height__126px {
   min-height: 126px;
 }

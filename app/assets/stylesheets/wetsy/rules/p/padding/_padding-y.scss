@@ -4,3 +4,9 @@
     @extend %padding-top__#{$key};
   }
 }
+
+// Pixels
+%padding-y__2px {
+  @extend %padding-top__2px;
+  @extend %padding-bottom__2px;
+}

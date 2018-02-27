@@ -8,7 +8,7 @@
   width: auto;
 }
 
-// percents
+// Percents
 %width__20pct {
   width: 20%;
 }
@@ -25,7 +25,6 @@
   width: 75%;
 }
 
-
 %width__80pct {
   width: 80%;
 }
@@ -34,7 +33,68 @@
   width: 100%;
 }
 
-// rems
+// Ems
+%width__1em {
+  width: 1em;
+}
+
+%width__1pt125em {
+  width: 1.125em;
+}
+
+%width__1pt33em {
+  width: 1.33em;
+}
+
+%width__1pt375em {
+  width: 1.375em;
+}
+
+%width__1pt4em {
+  width: 1.4em;
+}
+
+%width__1pt5em {
+  width: 1.5em;
+}
+
+%width__2em {
+  width: 2em;
+}
+
+%width__3em {
+  width: 3em;
+}
+
+%width__3pt5em {
+  width: 3.5em;
+}
+
+%width__4em {
+  width: 4em;
+}
+
+%width__5em {
+  width: 5em;
+}
+
+%width__10em {
+  width: 10em;
+}
+
+%width__15em {
+  width: 15em;
+}
+
+%width__20em {
+  width: 20em;
+}
+
+%width__30em {
+  width: 30em;
+}
+
+// Rems
 %width__1rem {
   width: 1rem;
 }
@@ -79,7 +139,7 @@
   width: 30rem;
 }
 
-// pixels
+// Pixels
 %width__1px {
   width: 1px;
 }

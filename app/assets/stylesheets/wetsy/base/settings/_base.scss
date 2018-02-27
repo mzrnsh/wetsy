@@ -1,6 +1,8 @@
-$border-radius__base:       0                                        !default;
 $border__base:              1px solid #{ $color-secondary }          !default;
 $border-color__base:        'secondary'                              !default;
+$border-radius__base:       0                                        !default;
+$border-style__base:        solid                                    !default;
+$border-width__base:        1px                                      !default;
 
 $box-shadow__base:          0 0 10px 0 darken($color-secondary, 10%) !default;
 

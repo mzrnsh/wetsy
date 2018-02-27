@@ -1,9 +1,15 @@
+@include property-generator--placeholder('margin-top', $measures);
+
 %margin-top__auto {
   margin-top: auto;
 }
 
-@include property-generator--placeholder('margin-top', $measures);
+// Ems
+%margin-top__-0pt125em {
+  margin-top: -.125em;
+}
 
+// Pixels
 %margin-top__8px {
   margin-top: 8px;
 }

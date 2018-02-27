@@ -1,7 +1,12 @@
+%border-width__base {
+  border-width: $border-width__base;
+}
+
 %border-width__0 {
   border-width: 0;
 }
 
+// Pixels
 %border-width__1px {
   border-width: 1px;
 }

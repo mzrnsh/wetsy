@@ -1,1 +1,5 @@
 @include property-generator--placeholder('fill', $colors);
+
+%fill__currentColor {
+  fill: currentColor;
+}

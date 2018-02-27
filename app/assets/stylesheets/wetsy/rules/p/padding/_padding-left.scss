@@ -1,5 +1,11 @@
 @include property-generator--placeholder('padding-left', $measures);
 
+// Ems
+%padding-left__0pt15em {
+  padding-left: 0.15em;
+}
+
+// Pixels
 %padding-left__20px {
   padding-left: 20px;
 }
