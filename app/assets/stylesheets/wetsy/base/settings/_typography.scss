@@ -1,15 +1,15 @@
-$body-font-family: "Helvetica Neue", arial, sans-serif !default;
+$body-font-family:    "Helvetica Neue", arial, sans-serif !default;
 $heading-font-family: "Helvetica Neue", arial, sans-serif !default;
 
 $font-size-html: 100% !default;
 
 $font-size-body: 1rem !default;
 
-$font-size-h1: 2rem !default;
-$font-size-h2: 1.5rem !default;
-$font-size-h3: 1.25rem !default;
+$font-size-h1: 2rem     !default;
+$font-size-h2: 1.5rem   !default;
+$font-size-h3: 1.25rem  !default;
 $font-size-h4: 1.125rem !default;
-$font-size-h5: 1rem !default;
+$font-size-h5: 1rem     !default;
 $font-size-h6: 0.875rem !default;
 
 $heading-font-sizes: (
@@ -20,3 +20,5 @@ $heading-font-sizes: (
   h5: $font-size-h5,
   h6: $font-size-h6
 );
+
+$heading-margin-bottom: 1rem !default;

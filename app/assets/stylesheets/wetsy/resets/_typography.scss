@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6 {
   @extend %font-family__heading-font-family;
   @extend %font-weight__500;
   @extend %margin-top__0;
-  @extend %margin-bottom__md;
+  @extend %margin-bottom__#{$heading-margin-bottom};
 }
 
 @include property-generator--element('font-size', $heading-font-sizes);
