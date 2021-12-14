@@ -1,3 +1,9 @@
+# ⚠️ No longer maintained ⚠️
+
+I started this project before the world had Tailwind CSS, and, ironically, it achieved unbelievably small stylesheet sizes with the exact opposite approach. Anyway, since we now do have Tailwind, I use it for most projects, and probably you should too.
+
+You are still welcome to use Wetsy, but I am no longer maintaining it so you'd be on your own.
+
 # Wetsy
 
 Wetsy is a CSS framework aiming to eliminate duplicated css styles. It believes **you should not have things like `width: 100%;` twice in your stylesheet**. And to do that, you should group all your selectors that need to have full width and set their width to 100%.
